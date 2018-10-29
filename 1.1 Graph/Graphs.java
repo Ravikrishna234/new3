@@ -26,11 +26,11 @@ public class Graphs implements Graph {
 	/**
 	 * variable.
 	 */
-	private final int V;
+	private final int vertice;
 	/**
 	 * variable.
 	 */
-	private int E;
+	private int edge;
 	/**
 	 * variable.
 	 */
@@ -48,13 +48,13 @@ public class Graphs implements Graph {
 	 * @details [long description]
 	 * @param V value.
 	 */
-	 public Graphs(int V) {
-		if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-		this.V = V;
-		this.E = 0;
-		adj = (Bag<Integer>[]) new Bag[V];
-		vertex = new String[V];
-		for (int v = 0; v < V; v++) {
+	 public Graphs(int vertice) {
+		if (vertice < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
+		this.vertice = vertice;
+		this.edge = 0;
+		adj = (Bag<Integer>[]) new Bag[vertice];
+		vertex = new String[edge];
+		for (int v = 0; v < vertice; v++) {
 			adj[v] = new Bag<Integer>();
 		}
 		size = 0;
@@ -66,7 +66,7 @@ public class Graphs implements Graph {
 	 * @return value
 	 */
 	 public int vertex() {
-		return V;
+		return vertice;
 	}
 	/**
 	 * @brief [brief description]
@@ -74,7 +74,7 @@ public class Graphs implements Graph {
 	 * @return value
 	 */
 	 public int edge() {
-		return E;
+		return edge;
 	}
 	/**
 	 * @brief [brief description]
@@ -87,12 +87,12 @@ public class Graphs implements Graph {
 
 		// validateVertex(v);
 		// validateVertex(w);
-	if(v == w) {
-		System.out.println(V + " vertices, " + E + " edges");
+	if (v == w) {
+		System.out.println(vertice + " vertices, " + edge + " edges");
 		System.out.println("No edges");
 		return;
 	}
-		E++;
+		edge++;
 		adj[v].add(w);
 	   adj[w].add(v);
 	}
@@ -103,8 +103,8 @@ public class Graphs implements Graph {
 	}
 	 public String toString() {
 		StringBuilder s = new StringBuilder();
-		s.append(V + " vertices, " + E + " edges" + "\n");
-		for (int v = 0; v < V; v++) {
+		s.append(vertice + " vertices, " + edge + " edges" + "\n");
+		for (int v = 0; v < vertice; v++) {
 			s.append(vertex[v] + ": ");
 			for (int w : adj[v]) {
 				s.append(vertex[w] + " ");
