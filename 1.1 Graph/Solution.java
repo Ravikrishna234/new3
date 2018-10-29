@@ -11,7 +11,7 @@ final class Solution {
      /**
      * variable.
      */
-    final static int hundred = 100;
+
     /**
      * @brief [brief description]
      * @details [long description]
@@ -23,7 +23,7 @@ final class Solution {
         String s1 = s.nextLine();
         int num1;
         int num2;
-
+        final int hundred = 100;
         String[] tokens = new String[hundred];
         String[] tokens1 = new String[hundred];
         switch (s1) {
