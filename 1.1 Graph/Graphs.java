@@ -46,9 +46,9 @@ public class Graphs implements Graph {
 	/**
 	 * @brief [brief description]
 	 * @details [long description]
-	 * @param V value.
+	 * @param Vert value.
 	 */
-	 public Graphs(int Vert) {
+	 public Graphs(final int Vert) {
 		if (Vert < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
 		this.vertices = Vert;
 		this.edges = 0;
@@ -83,7 +83,7 @@ public class Graphs implements Graph {
 	 * @param v value
 	 * @param w value
 	 */
-	public void addEdge(int v, int w) {
+	public void addEdge(final int v, final int w) {
 
 		// validateVertex(v);
 		// validateVertex(w);
@@ -97,7 +97,7 @@ public class Graphs implements Graph {
 	   adj[w].add(v);
 	}
 
-	public void addvertices(String s) {
+	public void addvertices(final String s) {
 		vertex[size++] = s;
 
 	}
