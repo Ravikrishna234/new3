@@ -1,32 +1,31 @@
-import java.util.NoSuchElementException;
 /**graphimplementation.**/
 final class Matrix {
-	/**
-	 * variable.
-	 */
- 	private final int vertices;
- 	/**
-	 * variable.
-	 */
+    /**
+     * variable.
+     */
+    private final int vertices;
+    /**
+     * variable.
+     */
     private int edges;
     /**
-	 * variable.
-	 */
+     * variable.
+     */
     private int[][] adj;
     /**
-	 * variable.
-	 */
+     * variable.
+     */
     private String[] matrices;
     /**
-	 * variable.
-	 */
+     * variable.
+     */
     private int size;
     /**
-     * @param V value
+     * @param vert value
      */
-     public Matrix(final int vert) {
+     Matrix(final int vert) {
         if (vert < 0) throw new IllegalArgumentException(
-        	"Too few vertices");
+            "Too few vertices");
         this.vertices = vert;
         this.edges = 0;
         this.adj = new int[vert][vert];
@@ -39,7 +38,7 @@ final class Matrix {
      * @return value
      */
       public int vertex() {
-      	return vertices;
+        return vertices;
       }
       /**
      * @brief [brief description]
@@ -47,7 +46,7 @@ final class Matrix {
      * @return value
      */
     public int edge() {
-    	return edges;
+        return edges;
     }
     /**
      * @brief [brief description]
@@ -57,11 +56,11 @@ final class Matrix {
      * @param w value
      */
     public void addEdge(final int v, final int w) {
-	if(v == w) {
-		System.out.println(vertices + " vertices, " + edges + " edges");
-		System.out.println("No edges");
-		return;
-	}
+    if (v == w) {
+        System.out.println(vertices + " vertices, " + edges + " edges");
+        System.out.println("No edges");
+        return;
+    }
         if (adj[v][w] == 0) edges++;
         adj[v][w] = 1;
         adj[w][v] = 1;
@@ -73,7 +72,7 @@ final class Matrix {
      * @param s value
      */
     public void addmat(final String s) {
-    	matrices[size++] = s;
+        matrices[size++] = s;
     }
     /**
      * @brief [brief description]
@@ -86,10 +85,10 @@ final class Matrix {
         for (int v = 0; v < vertices; v++) {
             //s.append(matrices[v] + ": ");
             for (int w : adj[v]) {
-            	if(w == 1) {
+                if(w == 1) {
                 s.append(1 + " ");
             } else {
-            	s.append(0 + " ");
+                s.append(0 + " ");
             }
             }
             s.append("\n");

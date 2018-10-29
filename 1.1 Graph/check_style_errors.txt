@@ -4,17 +4,11 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:25:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:27:6: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:27:30: Expected @param tag for 'vert'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:28: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:60:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:65: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:85:26: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:89:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:27: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:64: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:84:26: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:88:19: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
