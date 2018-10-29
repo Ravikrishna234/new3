@@ -24,8 +24,10 @@ final class Matrix {
      * @param vert value
      */
      Matrix(final int vert) {
-        if (vert < 0) throw new IllegalArgumentException(
+        if (vert < 0) {
+            throw new IllegalArgumentException(
             "Too few vertices");
+        }
         this.vertices = vert;
         this.edges = 0;
         this.adj = new int[vert][vert];
@@ -61,7 +63,9 @@ final class Matrix {
         System.out.println("No edges");
         return;
     }
-        if (adj[v][w] == 0) edges++;
+        if (adj[v][w] == 0) {
+            edges++;
+        }
         adj[v][w] = 1;
         adj[w][v] = 1;
     }
@@ -81,11 +85,11 @@ final class Matrix {
      */
  public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertices+ " vertices, " + edges + " edges" + "\n");
+        s.append(vertices + " vertices, " + edges + " edges" + "\n");
         for (int v = 0; v < vertices; v++) {
             //s.append(matrices[v] + ": ");
             for (int w : adj[v]) {
-                if(w == 1) {
+                if (w == 1) {
                 s.append(1 + " ");
             } else {
                 s.append(0 + " ");
