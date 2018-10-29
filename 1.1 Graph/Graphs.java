@@ -49,7 +49,8 @@ public class Graphs implements Graph {
      */
      public Graphs(final int vert) {
         if (vert < 0) {
-        throw new IllegalArgumentException("Number of vertices must be nonnegative");
+        throw new IllegalArgumentException
+        ("Number of vertices must be nonnegative");
     }
         this.vertices = vert;
         this.edges = 0;
@@ -127,5 +128,6 @@ public class Graphs implements Graph {
     }
 
 }
+
 
 

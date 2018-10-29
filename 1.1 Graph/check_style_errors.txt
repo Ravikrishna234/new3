@@ -1,10 +1,9 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:52: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:53:9: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
