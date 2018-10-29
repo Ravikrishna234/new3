@@ -6,9 +6,8 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:21:19: Name 'node' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:58:32: Expected @param tag for 'item'. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:90:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:99: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
