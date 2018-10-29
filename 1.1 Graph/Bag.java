@@ -13,12 +13,13 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * variable.
      */
-    private int N;
+    private int size;
     /**
      * variable.
      */
-    private node first;
-    private class node {
+    private Node first;
+    /**graphimplementation.**/
+    private class Node {
     /**
      * variable.
      */
@@ -26,14 +27,14 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * variable.
      */
-        private node next;
+        private Node next;
     }
    /**
      * Create an empty stack.
      */
     public Bag() {
         first = null;
-        N = 0;
+        size = 0;
     }
 
    /**
@@ -49,18 +50,19 @@ public class Bag<Item> implements Iterable<Item> {
      * @return value
      */
     public int size() {
-        return N;
+        return size;
     }
 
    /**
      * Add the item to the bag.
+     * @param item value
      */
     public void add(final Item item) {
-        node oldfirst = first;
-        first = new node();
+        Node oldfirst = first;
+        first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        size++;
     }
 
 
@@ -78,7 +80,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * variable.
      */
-        private node current = first;
+        private Node current = first;
         /**
          * @brief [brief description]
          * @details [long description]

@@ -1,12 +1,8 @@
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:12: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:16:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:21: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:21:19: Name 'node' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:58:32: Expected @param tag for 'item'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
