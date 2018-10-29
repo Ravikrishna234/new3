@@ -1,20 +1,21 @@
 /**graphimplementation.**/
 interface Graph {
-	/**
+	/**.
 	 * method
+	 * @return value
 	 */
     public int V();
-    /**
+    /**.
 	 * method
+	 * @return value
 	 */
     public int E();
-    /**
+    /**.
 	 * method
+	 * @return value
 	 */
     public void addEdge(int v, int w);
-    /**
-	 * method
-	 */
+
     // public Iterable<Integer> adj(int v);
     //public boolean hasEdge(int v, int w);
 }
