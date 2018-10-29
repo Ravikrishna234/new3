@@ -82,7 +82,7 @@ public class Graphs implements Graph {
   	}
   	 public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + "\n");
+        s.append(V + " vertices, " + E + " edges" + "\n");
         for (int v = 0; v < V; v++) {
             s.append(vertex[v] + ": ");
             for (int w : adj[v]) {
