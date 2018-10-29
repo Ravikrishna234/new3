@@ -1,7 +1,0 @@
-[master 82ed9cc] "ads2_m1_a1_1: 7/8 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
- 1 file changed, 1 insertion(+), 1 deletion(-)
- rewrite ADS -2 assignment/M1/1.1 Graph/result/score.json (81%)
-fatal: HttpRequestException encountered.
-   An error occurred while sending the request.
-remote: Invalid username or password.
-fatal: Authentication failed for 'https://github.com/Ravikrishna234/new3.git/'
