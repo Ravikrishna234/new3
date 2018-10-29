@@ -73,16 +73,28 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     // an iterator, doesn't implement remove() since it's optional
+    /**graphimplementation.**/
     private class ListIterator implements Iterator<Item> {
+    /**
+     * variable.
+     */
         private node current = first;
-
+        /**
+         * @brief [brief description]
+         * @details [long description]
+         * @return value
+         */
         public boolean hasNext()  {
             return current != null;
         }
         public void remove()      {
             throw new UnsupportedOperationException();
          }
-
+         /**
+          * @brief [brief description]
+          * @details [long description]
+          * @return value
+          */
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
