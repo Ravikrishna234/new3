@@ -38,6 +38,7 @@ public class Bag<Item> implements Iterable<Item> {
 
    /**
      * Is the BAG empty?
+     * @return value
      */
     public boolean isEmpty() {
         return first == null;
@@ -45,6 +46,7 @@ public class Bag<Item> implements Iterable<Item> {
 
    /**
      * Return the number of items in the bag.
+     * @return value
      */
     public int size() {
         return N;
@@ -53,7 +55,7 @@ public class Bag<Item> implements Iterable<Item> {
    /**
      * Add the item to the bag.
      */
-    public void add(Item item) {
+    public void add(final Item item) {
         node oldfirst = first;
         first = new node();
         first.item = item;
@@ -64,6 +66,7 @@ public class Bag<Item> implements Iterable<Item> {
 
    /**
      * Return an iterator that iterates over the items in the bag.
+     * @return value
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();

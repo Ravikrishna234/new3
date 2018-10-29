@@ -4,21 +4,17 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:16:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:21: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:21:19: Name 'node' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:42: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:49: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:56:21: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:56:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:68: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:73: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:74:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:76: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:76:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:77: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:77:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:79:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:80: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:58:32: Expected @param tag for 'item'. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:76: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:77:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:79: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:79:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:80: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:80:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:82:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:83: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
