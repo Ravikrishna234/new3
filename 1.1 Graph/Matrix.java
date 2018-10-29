@@ -1,39 +1,89 @@
 import java.util.NoSuchElementException;
+/**graphimplementation.**/
 final class Matrix {
- 	private final int V;
-    private int E;
+	/**
+	 * variable.
+	 */
+ 	private final int vertices;
+ 	/**
+	 * variable.
+	 */
+    private int edges;
+    /**
+	 * variable.
+	 */
     private int[][] adj;
+    /**
+	 * variable.
+	 */
     private String[] matrices;
+    /**
+	 * variable.
+	 */
     private int size;
-     public Matrix(int V) {
-        if (V < 0) throw new IllegalArgumentException("Too few vertices");
-        this.V = V;
-        this.E = 0;
-        this.adj = new int[V][V];
-        this.matrices = new String[V];
+    /**
+     * @param V value
+     */
+     public Matrix(final int vert) {
+        if (vert < 0) throw new IllegalArgumentException(
+        	"Too few vertices");
+        this.vertices = vert;
+        this.edges = 0;
+        this.adj = new int[vert][vert];
+        this.matrices = new String[vert];
         this.size = 0;
     }
-      public int V() { return V; }
-    public int E() { return E; }
-
-
-public void addEdge(int v, int w) {
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
+     */
+      public int vertex() {
+      	return vertices;
+      }
+      /**
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
+     */
+    public int edge() {
+    	return edges;
+    }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *
+     * @param v value
+     * @param w value
+     */
+    public void addEdge(final int v, final int w) {
 	if(v == w) {
-		System.out.println(V + " vertices, " + E + " edges");
+		System.out.println(vertices + " vertices, " + edges + " edges");
 		System.out.println("No edges");
 		return;
 	}
-        if (adj[v][w] == 0) E++;
+        if (adj[v][w] == 0) edges++;
         adj[v][w] = 1;
         adj[w][v] = 1;
     }
-    public void addmat(String s) {
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *
+     * @param s value
+     */
+    public void addmat(final String s) {
     	matrices[size++] = s;
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
+     */
  public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges" + "\n");
-        for (int v = 0; v < V; v++) {
+        s.append(vertices+ " vertices, " + edges + " edges" + "\n");
+        for (int v = 0; v < vertices; v++) {
             //s.append(matrices[v] + ": ");
             for (int w : adj[v]) {
             	if(w == 1) {
