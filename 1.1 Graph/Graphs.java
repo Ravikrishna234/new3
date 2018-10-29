@@ -65,6 +65,7 @@ public class Graphs implements Graph {
     /**
      * @brief [brief description]
      * @details [long description]
+     * Time complexity is O(1)
      * @return value
      */
      public int vertex() {
@@ -73,6 +74,7 @@ public class Graphs implements Graph {
     /**
      * @brief [brief description]
      * @details [long description]
+     * Time complexity is O(1)
      * @return value
      */
      public int edge() {
@@ -81,7 +83,7 @@ public class Graphs implements Graph {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(1)
      * @param v value
      * @param w value
      */
@@ -101,7 +103,7 @@ public class Graphs implements Graph {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(1)
      * @param s value
      */
     public void addvertices(final String s) {
@@ -111,6 +113,7 @@ public class Graphs implements Graph {
     /**
      * @brief [brief description]
      * @details [long description]
+     * Time complexity is O(N ^ 2)
      * @return value
      */
      public String toString() {

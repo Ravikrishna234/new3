@@ -15,7 +15,7 @@ final class Solution {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(N)
      * @param args value
      */
     public static void main(final String[] args) {

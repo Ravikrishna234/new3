@@ -36,7 +36,8 @@ final class Matrix {
     }
     /**
      * @brief [brief description]
-     * @details [long description]
+     * @details [long description]#
+     * Time complexity is O(1)
      * @return value
      */
       public int vertex() {
@@ -45,6 +46,7 @@ final class Matrix {
       /**
      * @brief [brief description]
      * @details [long description]
+     * Time complexity is O(1)
      * @return value
      */
     public int edge() {
@@ -53,7 +55,7 @@ final class Matrix {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(1)
      * @param v value
      * @param w value
      */
@@ -72,7 +74,7 @@ final class Matrix {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(1)
      * @param s value
      */
     public void addmat(final String s) {
@@ -81,6 +83,7 @@ final class Matrix {
     /**
      * @brief [brief description]
      * @details [long description]
+     * Time complexity is O(N^2)
      * @return value
      */
  public String toString() {
