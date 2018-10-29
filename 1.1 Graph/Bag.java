@@ -9,6 +9,11 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**graphimplementation.**/
+/**
+ * @brief [brief description]
+ * @details [long description]
+ * @param Item value
+ */
 public class Bag<Item> implements Iterable<Item> {
     /**
      * variable.

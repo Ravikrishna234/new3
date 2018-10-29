@@ -1,14 +1,15 @@
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:12: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:13:4: Unknown tag 'brief'. [JavadocType]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:14:4: Unknown tag 'details'. [JavadocType]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:17: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:3:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:3:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:3:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
@@ -36,7 +37,7 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:89:10: Class 'Graphs' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Graphs' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graphs.java:89:10: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 26 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Matrix.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
