@@ -45,11 +45,12 @@ public class Graphs implements Graph {
     /**
      * @brief [brief description]
      * @details [long description]
-     * @param Vert value.
+     * @param vert value.
      */
      public Graphs(final int vert) {
-        if (vert < 0)
+        if (vert < 0) {
         throw new IllegalArgumentException("Number of vertices must be nonnegative");
+    }
         this.vertices = vert;
         this.edges = 0;
         adj = (Bag<Integer>[]) new Bag[vert];
@@ -100,12 +101,17 @@ public class Graphs implements Graph {
      * @brief [brief description]
      * @details [long description]
      *
-     * @param String value
+     * @param s value
      */
     public void addvertices(final String s) {
         vertex[size++] = s;
 
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
+     */
      public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(vertices + " vertices, " + edges + " edges" + "\n");
