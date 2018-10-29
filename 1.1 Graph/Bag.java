@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**graphimplementation.**/
 /**
- * @param Item value
+ * @param <Item> value
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
