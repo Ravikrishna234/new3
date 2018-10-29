@@ -1,10 +1,8 @@
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:13:4: Unknown tag 'brief'. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:14:4: Unknown tag 'details'. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:17: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Bag.java:15: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
