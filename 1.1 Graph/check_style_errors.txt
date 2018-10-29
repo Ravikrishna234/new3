@@ -64,24 +64,11 @@ Audit done.
 Checkstyle ends with 30 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:5:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:10:38: '100' is a magic number. [MagicNumber]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:11:39: '100' is a magic number. [MagicNumber]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:12: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:12:15: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:16:15: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:23:16: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:26:16: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:26:37: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:28: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:28:56: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:30:15: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:39:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:46:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:49:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:51: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:52:21: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:3: Class Solution should be declared as final. [FinalClass]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:22:38: '100' is a magic number. [MagicNumber]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:23:39: '100' is a magic number. [MagicNumber]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:24: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:40: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:63: Line is longer than 80 characters (found 91). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 7 errors.
