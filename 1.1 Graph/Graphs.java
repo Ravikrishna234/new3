@@ -26,11 +26,11 @@ public class Graphs implements Graph {
 	/**
 	 * variable.
 	 */
-	private final int vertice;
+	private final int vertices;
 	/**
 	 * variable.
 	 */
-	private int edge;
+	private int edges;
 	/**
 	 * variable.
 	 */
@@ -48,13 +48,13 @@ public class Graphs implements Graph {
 	 * @details [long description]
 	 * @param V value.
 	 */
-	 public Graphs(int vertice) {
-		if (vertice < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-		this.vertice = vertice;
-		this.edge = 0;
-		adj = (Bag<Integer>[]) new Bag[vertice];
-		vertex = new String[edge];
-		for (int v = 0; v < vertice; v++) {
+	 public Graphs(int Vert) {
+		if (Vert < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
+		this.vertices = Vert;
+		this.edges = 0;
+		adj = (Bag<Integer>[]) new Bag[Vert];
+		vertex = new String[Vert];
+		for (int v = 0; v < Vert; v++) {
 			adj[v] = new Bag<Integer>();
 		}
 		size = 0;
@@ -66,7 +66,7 @@ public class Graphs implements Graph {
 	 * @return value
 	 */
 	 public int vertex() {
-		return vertice;
+		return vertices;
 	}
 	/**
 	 * @brief [brief description]
@@ -74,7 +74,7 @@ public class Graphs implements Graph {
 	 * @return value
 	 */
 	 public int edge() {
-		return edge;
+		return edges;
 	}
 	/**
 	 * @brief [brief description]
@@ -87,12 +87,12 @@ public class Graphs implements Graph {
 
 		// validateVertex(v);
 		// validateVertex(w);
-	if (v == w) {
-		System.out.println(vertice + " vertices, " + edge + " edges");
+	if(v == w) {
+		System.out.println(vertices + " vertices, " + edges + " edges");
 		System.out.println("No edges");
 		return;
 	}
-		edge++;
+		edges++;
 		adj[v].add(w);
 	   adj[w].add(v);
 	}
@@ -103,8 +103,8 @@ public class Graphs implements Graph {
 	}
 	 public String toString() {
 		StringBuilder s = new StringBuilder();
-		s.append(vertice + " vertices, " + edge + " edges" + "\n");
-		for (int v = 0; v < vertice; v++) {
+		s.append(vertices + " vertices, " + edges + " edges" + "\n");
+		for (int v = 0; v < vertices; v++) {
 			s.append(vertex[v] + ": ");
 			for (int w : adj[v]) {
 				s.append(vertex[w] + " ");
