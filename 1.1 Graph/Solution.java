@@ -14,6 +14,10 @@ class Solution {
         case "List":
             num1 = Integer.parseInt(s.nextLine());
             num2 = Integer.parseInt(s.nextLine());
+            if(num1 == 0 || num2 == 0) {
+                System.out.println(num1 + "vertices, " + num2 + " edges");
+                System.out.println("No edges");
+            }
             Graphs g = new Graphs(num1);
             tokens = s.nextLine().split(",");
             for(int i = 0; i < num1; i++) {

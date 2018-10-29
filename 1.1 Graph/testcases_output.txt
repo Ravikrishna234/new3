@@ -261,6 +261,8 @@ Expected Output:
 No edges
 
 Your Output: 
+0vertices, 0 edges
+No edges
 0 vertices, 0 edges
 ----------------------------------------
 
