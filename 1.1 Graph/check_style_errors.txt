@@ -64,11 +64,7 @@ Audit done.
 Checkstyle ends with 30 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:3: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:22:38: '100' is a magic number. [MagicNumber]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:23:39: '100' is a magic number. [MagicNumber]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:24: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:40: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:63: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:14:11: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\1.1 Graph\Solution.java:14:22: Name 'hundred' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.

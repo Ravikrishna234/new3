@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**GRAPHIMPLEMENTATION.**/
-class Solution {
+final class Solution {
     /**
      * @brief [brief description]
      * @details [long description]
@@ -8,6 +8,10 @@ class Solution {
     private Solution() {
         //Unused.
     }
+     /**
+     * variable.
+     */
+    final static int hundred = 100;
     /**
      * @brief [brief description]
      * @details [long description]
@@ -19,8 +23,9 @@ class Solution {
         String s1 = s.nextLine();
         int num1;
         int num2;
-        String[] tokens = new String[100];
-        String[] tokens1 = new String[100];
+
+        String[] tokens = new String[hundred];
+        String[] tokens1 = new String[hundred];
         switch (s1) {
         case "List":
             num1 = Integer.parseInt(s.nextLine());
@@ -37,7 +42,8 @@ class Solution {
             }
             for (int i = 0; i < num2; i++) {
                 tokens1 = s.nextLine().split(" ");
-                g.addEdge(Integer.parseInt(tokens1[0]), Integer.parseInt(tokens1[1]));
+                g.addEdge(Integer.parseInt(tokens1[0]),
+                    Integer.parseInt(tokens1[1]));
             }
             if (tokens1[0].equals(tokens1[1])) {
                 break;
@@ -60,12 +66,15 @@ class Solution {
                 }
                 for (int i = 0; i < num2; i++) {
                     tokens1  = s.nextLine().split(" ");
-                    gp.addEdge(Integer.parseInt(tokens1[0]), Integer.parseInt(tokens1[1]));
+                    gp.addEdge(Integer.parseInt(tokens1[0]),
+                        Integer.parseInt(tokens1[1]));
                 } if (tokens1[0].equals(tokens1[1])) {
                     break;
                 } else {
                 System.out.println(gp);
             }
+            default:
+            break;
         }
 
 }
