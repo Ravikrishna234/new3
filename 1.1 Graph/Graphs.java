@@ -87,7 +87,7 @@ public class Graphs implements Graph {
             s.append(vertex[v] + ": ");
             for (int w : adj[v]) {
                 s.append(vertex[w] + " ");
-                s.substring(0,s.length() - 1);
+                //s.substring(0,s.length() - 1);
             }
             s.append("\n");
         }

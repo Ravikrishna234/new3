@@ -29,11 +29,7 @@ Daman and Diu: Dadra and Nagar Haveli
 Delhi: Gujarat Goa Haryana 
 Goa: Delhi 
 Gujarat: Delhi Haryana 
-Haryana: Gujarat Delhi 
-
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:29)
+Haryana: Gujarat Delhi
 ----------------------------------------
 
 ########## Testcase 1: Passed ##########
@@ -147,11 +143,7 @@ Telangana: Haryana Delhi Haryana
 Tripura: Gujarat Delhi 
 Uttar Pradesh: West Bengal 
 Uttarakhand: Assam 
-West Bengal: Uttar Pradesh Bihar 
-
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:29)
+West Bengal: Uttar Pradesh Bihar
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -241,11 +233,7 @@ No edges
 
 Your Output: 
 1 vertices, 1 edges 
-Hyderabad: Hyderabad Hyderabad 
-
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:29)
+Hyderabad: Hyderabad Hyderabad
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -273,10 +261,6 @@ Expected Output:
 No edges
 
 Your Output: 
-0 vertices, 0 edges 
-
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:29)
+0 vertices, 0 edges
 ----------------------------------------
 

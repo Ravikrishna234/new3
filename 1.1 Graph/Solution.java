@@ -9,6 +9,7 @@ class Solution {
         int num2;
         String[] tokens;
         String[] tokens1;
+        try {
         switch(s1) {
         case "List":
             num1 = Integer.parseInt(s.nextLine());
@@ -24,7 +25,7 @@ class Solution {
             }
             System.out.println(g);
 
-
+            break;
     case "Matrix":
                  num1 = Integer.parseInt(s.nextLine());
                 num2 = Integer.parseInt(s.nextLine());
@@ -39,5 +40,8 @@ class Solution {
                 }
                 System.out.println(gp);
         }
+    } catch(Exception e) {
+        System.out.println(e);
+    }
 }
 }
