@@ -87,6 +87,10 @@ public class Bag<Item> implements Iterable<Item> {
         public boolean hasNext()  {
             return current != null;
         }
+        /**
+         * @brief [brief description]
+         * @details [long description]
+         */
         public void remove()      {
             throw new UnsupportedOperationException();
          }
