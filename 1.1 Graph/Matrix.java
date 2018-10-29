@@ -1,4 +1,5 @@
-class Matrix {
+import java.util.NoSuchElementException;
+final class Matrix {
  	private final int V;
     private int E;
     private int[][] adj;
