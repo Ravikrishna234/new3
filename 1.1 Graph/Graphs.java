@@ -81,6 +81,7 @@ public class Graphs implements Graph {
         adj[v].add(w);
        adj[w].add(v);
     }
+
   	public void addvertices(String s) {
   		vertex[size++] = s;
 
