@@ -1,8 +1,20 @@
 /**graphimplementation.**/
 interface Graph {
+	/**
+	 * method
+	 */
     public int V();
+    /**
+	 * method
+	 */
     public int E();
+    /**
+	 * method
+	 */
     public void addEdge(int v, int w);
+    /**
+	 * method
+	 */
     // public Iterable<Integer> adj(int v);
     //public boolean hasEdge(int v, int w);
 }
