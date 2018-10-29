@@ -47,13 +47,14 @@ public class Graphs implements Graph {
      * @details [long description]
      * @param Vert value.
      */
-     public Graphs(final int Vert) {
-        if (Vert < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-        this.vertices = Vert;
+     public Graphs(final int vert) {
+        if (vert < 0)
+        throw new IllegalArgumentException("Number of vertices must be nonnegative");
+        this.vertices = vert;
         this.edges = 0;
-        adj = (Bag<Integer>[]) new Bag[Vert];
-        vertex = new String[Vert];
-        for (int v = 0; v < Vert; v++) {
+        adj = (Bag<Integer>[]) new Bag[vert];
+        vertex = new String[vert];
+        for (int v = 0; v < vert; v++) {
             adj[v] = new Bag<Integer>();
         }
         size = 0;
@@ -95,7 +96,12 @@ public class Graphs implements Graph {
         adj[v].add(w);
        adj[w].add(v);
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *
+     * @param String value
+     */
     public void addvertices(final String s) {
         vertex[size++] = s;
 
