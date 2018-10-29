@@ -72,6 +72,11 @@ public class Graphs implements Graph {
 
         // validateVertex(v);
         // validateVertex(w);
+    if(v == w) {
+    	System.out.println(V + " vertices, " + E + " edges");
+    	System.out.println("No edges");
+    	return;
+    }
         E++;
         adj[v].add(w);
        adj[w].add(v);

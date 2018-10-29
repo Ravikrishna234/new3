@@ -7,9 +7,8 @@ class Solution {
         String s1 = s.nextLine();
         int num1;
         int num2;
-        String[] tokens;
-        String[] tokens1;
-        try {
+        String[] tokens = new String[100];
+        String[] tokens1 = new String[100];
         switch(s1) {
         case "List":
             num1 = Integer.parseInt(s.nextLine());
@@ -28,8 +27,11 @@ class Solution {
                 tokens1 = s.nextLine().split(" ");
                 g.addEdge(Integer.parseInt(tokens1[0]),Integer.parseInt(tokens1[1]));
             }
+            if(tokens1[0].equals(tokens1[1])) {
+                break;
+            } else {
             System.out.println(g);
-
+        }
             break;
     case "Matrix":
                  num1 = Integer.parseInt(s.nextLine());
@@ -47,11 +49,12 @@ class Solution {
                 for(int i = 0; i < num2; i++) {
                     tokens1  = s.nextLine().split(" ");
                     gp.addEdge(Integer.parseInt(tokens1[0]), Integer.parseInt(tokens1[1]));
-                }
+                } if(tokens1[0].equals(tokens1[1])) {
+                    break;
+                } else {
                 System.out.println(gp);
+            }
         }
-    } catch(Exception e) {
-        System.out.println(e);
-    }
+
 }
 }
