@@ -3,9 +3,8 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 55
-	at Graphs.hasEdge(Graphs.java:124)
-	at Graphs.addEdge(Graphs.java:108)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 56
+	at Graphs.addEdge(Graphs.java:110)
 	at Percolation.open(Percolation.java:36)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
@@ -93,9 +92,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at Graphs.hasEdge(Graphs.java:124)
-	at Graphs.addEdge(Graphs.java:108)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
+	at Graphs.addEdge(Graphs.java:110)
 	at Percolation.open(Percolation.java:36)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
@@ -127,9 +125,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 27
-	at Graphs.hasEdge(Graphs.java:124)
-	at Graphs.addEdge(Graphs.java:108)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 26
+	at Graphs.addEdge(Graphs.java:110)
 	at Percolation.open(Percolation.java:33)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
@@ -139,9 +136,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 27
-	at Graphs.hasEdge(Graphs.java:124)
-	at Graphs.addEdge(Graphs.java:108)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 26
+	at Graphs.addEdge(Graphs.java:110)
 	at Percolation.open(Percolation.java:33)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
@@ -173,9 +169,8 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 71
-	at Graphs.hasEdge(Graphs.java:124)
-	at Graphs.addEdge(Graphs.java:108)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 72
+	at Graphs.addEdge(Graphs.java:110)
 	at Percolation.open(Percolation.java:36)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
@@ -185,9 +180,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 245
-	at Graphs.hasEdge(Graphs.java:124)
-	at Graphs.addEdge(Graphs.java:108)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 244
+	at Graphs.addEdge(Graphs.java:110)
 	at Percolation.open(Percolation.java:33)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
@@ -208,9 +202,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2186
-	at Graphs.hasEdge(Graphs.java:124)
-	at Graphs.addEdge(Graphs.java:108)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2246
+	at Graphs.addEdge(Graphs.java:110)
 	at Percolation.open(Percolation.java:42)
 	at Solution.main(Solution.java:10)
 ----------------------------------------

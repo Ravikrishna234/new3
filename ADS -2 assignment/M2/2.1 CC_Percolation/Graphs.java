@@ -105,9 +105,8 @@ public class Graphs implements Graph {
     //     System.out.println("No edges");
     //     return;
     // }
-        if(!hasEdge(v,w)) {
+
         edges++;
-    }
         adj[v].add(w);
        adj[w].add(v);
     }
