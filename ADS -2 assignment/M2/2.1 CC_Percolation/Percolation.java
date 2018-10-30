@@ -51,25 +51,28 @@ class Percolation {
 		gp.addEdge((size * size) + 1, getIndex(r, c));
 		}
         if (c < size - 1 && grid[r][c + 1]) { //bottom
-        	gp.addEdge(getIndex(r, c), getIndex(r, c + 1) );
+        	gp.addEdge(getIndex(r, c), getIndex(r, c + 1));
         }
         if (c > 0 && grid[r][c - 1]) { // left
-        	gp.addEdge(getIndex(r, c), getIndex(r, c - 1) );
+        	gp.addEdge(getIndex(r, c), getIndex(r, c - 1));
         }
         if ( r < size - 1 && grid[r + 1][c]) { //right
-        	gp.addEdge(getIndex(r, c), getIndex(r + 1, c) );
+        	gp.addEdge(getIndex(r, c), getIndex(r + 1, c));
         }
         if (r > 0 && grid[r - 1][c]) { // top
-        	gp.addEdge(getIndex(r, c), getIndex(r - 1, c) );
+        	gp.addEdge(getIndex(r, c), getIndex(r - 1, c));
         }
 	}
 	// public int numberOfOpenSites() {
 	// 	return count;
 	// }
+	/**
+	 * @return value
+	 */
 	public boolean percolates() {
 		CC obj = new CC(gp);
 
-		return obj.connected(size * size, (size*size)+1);
+		return obj.connected(size * size, (size * size) + 1);
 
 	}
 }

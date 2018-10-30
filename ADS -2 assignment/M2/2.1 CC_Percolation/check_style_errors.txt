@@ -63,18 +63,9 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:42:26: Parameter r should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:42:33: Parameter c should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:43:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:54:62: ')' is preceded with whitespace. [ParenPad]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:57:62: ')' is preceded with whitespace. [ParenPad]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:59:13: '(' is followed by whitespace. [ParenPad]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:60:62: ')' is preceded with whitespace. [ParenPad]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:63:62: ')' is preceded with whitespace. [ParenPad]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:69:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:72:56: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:72:57: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:72:62: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:72:63: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]
