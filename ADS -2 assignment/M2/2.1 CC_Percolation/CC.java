@@ -1,15 +1,27 @@
-public class CC {
-    private boolean[] marked;   // marked[v] = has vertex v been marked?
-    private int[] id;           // id[v] = id of connected component containing v
-    private int[] size;         // size[id] = number of vertices in given component
-    private int count;          // number of connected components
-
-    /**
-     * Computes the connected components of the undirected graph {@code G}.
-     *
-     * @param G the undirected graph
+/**percolation.**/
+final class CC {
+     /**
+     * variable.
      */
-    public CC(Graphs G) {
+    private boolean[] marked;
+     /**
+     * variable.
+     */
+    private int[] id;
+     /**
+     * variable.
+     */
+    private int[] size;
+     /**
+     * variable.
+     */
+    private int count;
+    /**
+     * @param G value
+     * @return [description]
+     */
+
+    public CC(final Graphs G) {
         marked = new boolean[G.vertex()];
         id = new int[G.vertex()];
         size = new int[G.vertex()];
@@ -20,9 +32,11 @@ public class CC {
             }
         }
     }
-
-    // depth-first search for a Graph
-    private void dfs(Graphs G, int v) {
+    /**
+     * @param G [description]
+     * @param v [description]
+     */
+    private void dfs(final Graphs G, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
@@ -32,33 +46,45 @@ public class CC {
             }
         }
     }
-
-
-    public int id(int v) {
+    /**
+     * @param v [description]
+     * @return [description]
+     */
+    public int id(final int v) {
 
         return id[v];
     }
-
-    public int size(int v) {
+    /**
+     * @param v [description]
+     * @return [description]
+     */
+    public int size(final int v) {
 
         return size[id[v]];
     }
-
-
+    /**
+     * @return [description]
+     */
     public int count() {
         return count;
     }
-
-    public boolean connected(int v, int w) {
+     /**
+     * @return [description]
+     */
+    public boolean connected(final int v, final int w) {
 
         return id(v) == id(w);
     }
-    public boolean areConnected(int v, int w) {
+     /**
+     * @return [description]
+     */
+    public boolean areConnected(final int v, final int w) {
         return id(v) == id(w);
     }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
+     /**
+     * @return [description]
+     */
+    private void validateVertex(final int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
