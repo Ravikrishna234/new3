@@ -19,10 +19,6 @@ Expected Output:
 true
 
 Your Output: 
-3 vertices, 0 edges
-No edges
-3 vertices, 0 edges
-No edges
 false
 ----------------------------------------
 
@@ -39,22 +35,14 @@ Expected Output:
 true
 
 Your Output: 
-6 vertices, 0 edges
-No edges
-6 vertices, 0 edges
-No edges
 false
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-6 vertices, 0 edges
-No edges
-6 vertices, 0 edges
-No edges
 false
 ----------------------------------------
 
@@ -63,10 +51,6 @@ Expected Output:
 true
 
 Your Output: 
-11 vertices, 2 edges
-No edges
-11 vertices, 5 edges
-No edges
 false
 ----------------------------------------
 
@@ -75,10 +59,6 @@ Expected Output:
 true
 
 Your Output: 
-18 vertices, 3 edges
-No edges
-18 vertices, 6 edges
-No edges
 false
 ----------------------------------------
 
@@ -87,10 +67,6 @@ Expected Output:
 true
 
 Your Output: 
-27 vertices, 0 edges
-No edges
-27 vertices, 8 edges
-No edges
 false
 ----------------------------------------
 
@@ -107,8 +83,6 @@ Expected Output:
 true
 
 Your Output: 
-51 vertices, 5 edges
-No edges
 false
 ----------------------------------------
 
@@ -141,8 +115,6 @@ Expected Output:
 true
 
 Your Output: 
-102 vertices, 14 edges
-No edges
 false
 ----------------------------------------
 
@@ -159,8 +131,6 @@ Expected Output:
 true
 
 Your Output: 
-402 vertices, 0 edges
-No edges
 false
 ----------------------------------------
 
@@ -169,8 +139,6 @@ Expected Output:
 true
 
 Your Output: 
-2502 vertices, 906 edges
-No edges
 false
 ----------------------------------------
 
@@ -187,10 +155,6 @@ Expected Output:
 true
 
 Your Output: 
-2211 vertices, 528 edges
-No edges
-2211 vertices, 1778 edges
-No edges
 false
 ----------------------------------------
 
@@ -199,10 +163,6 @@ Expected Output:
 true
 
 Your Output: 
-3602 vertices, 2441 edges
-No edges
-3602 vertices, 3111 edges
-No edges
 false
 ----------------------------------------
 
@@ -211,10 +171,6 @@ Expected Output:
 true
 
 Your Output: 
-171 vertices, 82 edges
-No edges
-171 vertices, 83 edges
-No edges
 false
 ----------------------------------------
 
@@ -223,10 +179,6 @@ Expected Output:
 true
 
 Your Output: 
-10203 vertices, 5098 edges
-No edges
-10203 vertices, 5099 edges
-No edges
 false
 ----------------------------------------
 
@@ -235,10 +187,6 @@ Expected Output:
 true
 
 Your Output: 
-9606 vertices, 735 edges
-No edges
-9606 vertices, 7995 edges
-No edges
 false
 ----------------------------------------
 
