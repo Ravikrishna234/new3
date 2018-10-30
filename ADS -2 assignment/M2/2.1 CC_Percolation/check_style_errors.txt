@@ -3,21 +3,14 @@ Audit done.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:21: Unused Javadoc tag. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:24:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:39:35: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:74:40: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:74:53: Expected @param tag for 'w'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:81:43: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:81:56: Expected @param tag for 'w'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:85: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:87:43: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:88:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:89: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:90: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:90:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:90:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:90: Unused Javadoc tag. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:93:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:94: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:95: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:95:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\CC.java:95:94: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -17,32 +17,32 @@ final class CC {
      */
     private int count;
     /**
-     * @param G value
+     * @param graph value
      * @return [description]
      */
 
-    public CC(final Graphs G) {
-        marked = new boolean[G.vertex()];
-        id = new int[G.vertex()];
-        size = new int[G.vertex()];
-        for (int v = 0; v < G.vertex(); v++) {
+    public CC(final Graphs graph) {
+        marked = new boolean[graph.vertex()];
+        id = new int[graph.vertex()];
+        size = new int[graph.vertex()];
+        for (int v = 0; v < graph.vertex(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(graph, v);
                 count++;
             }
         }
     }
     /**
-     * @param G [description]
+     * @param graph [description]
      * @param v [description]
      */
-    private void dfs(final Graphs G, final int v) {
+    private void dfs(final Graphs graph, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : graph.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(graph, w);
             }
         }
     }
@@ -69,6 +69,8 @@ final class CC {
         return count;
     }
      /**
+      * @param v value
+      * @param w value
      * @return [description]
      */
     public boolean connected(final int v, final int w) {
@@ -76,12 +78,15 @@ final class CC {
         return id(v) == id(w);
     }
      /**
+      * @param v value
+      * @param w value
      * @return [description]
      */
     public boolean areConnected(final int v, final int w) {
         return id(v) == id(w);
     }
      /**
+    * @param v value
      * @return [description]
      */
     private void validateVertex(final int v) {
