@@ -87,13 +87,12 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:39:62: ')' is preceded with whitespace. [ParenPad]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:42:62: ')' is preceded with whitespace. [ParenPad]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:48:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:50:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:50:52: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:50:53: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:50:58: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:50:59: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:51:56: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:51:57: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:51:62: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:51:63: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 37 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]

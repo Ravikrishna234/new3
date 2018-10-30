@@ -47,10 +47,8 @@ class Percolation {
 	// }
 	public boolean percolates() {
 		CC obj = new CC(gp);
-		if(obj.connected(size * size, (size*size)+1)) {
-			return true;
-		}
-		return false;
+
+		return obj.connected(size * size, (size*size)+1);
 
 	}
 }
