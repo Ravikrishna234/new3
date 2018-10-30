@@ -66,7 +66,7 @@ public class Graphs implements Graph {
      * @param v value
      * @return value
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         //validateVertex(v);
         return adj[v];
     }
@@ -108,10 +108,11 @@ public class Graphs implements Graph {
      * Time complexity is O(1)
      * @param v value
      * @param w value
+     * @return value
      */
-    public boolean hasEdge(final int v,final int w) {
-        for(int i : adj[w]) {
-            if(i == w) {
+    public boolean hasEdge(final int v, final int w) {
+        for (int i : adj[w]) {
+            if (i == w) {
                 return true;
             }
         }
@@ -120,8 +121,8 @@ public class Graphs implements Graph {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
-     * @param String
+     * Time complexity is O(1)
+     * @param s value
      */
     public void addvertices(final String s) {
         vertex[size++] = s;
@@ -148,3 +149,4 @@ public class Graphs implements Graph {
     }
 
 }
+
