@@ -18,7 +18,6 @@ final class CC {
     private int count;
     /**
      * @param graph value
-     * @return [description]
      */
 
     public CC(final Graphs graph) {
@@ -90,8 +89,12 @@ final class CC {
      * @return [description]
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        int value = marked.length;
+        if (v < 0 || v >= value) {
+            throw new IllegalArgumentException(
+                "vertex " + v + " is not between 0 and " + (value - 1));
+        }
     }
 }
+
+
