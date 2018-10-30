@@ -41,7 +41,7 @@ public class Graphs implements Graph {
     /**
      * variable.
      */
-    //private String[] vertex;
+     private String[] vertex;
     /**
      * @brief [brief description]
      * @details [long description]
@@ -98,17 +98,7 @@ public class Graphs implements Graph {
      */
     public void addEdge(final int v, final int w) {
 
-        // validateVertex(v);
-        // validateVertex(w);
-    // if (v == w) {
-    //     System.out.println(vertices + " vertices, " + edges + " edges");
-    //     System.out.println("No edges");
-    //     return;
-    // }
-        //if(!hasEdge(v,w)) {
-
         edges++;
-    //}
         adj[v].add(w);
        adj[w].add(v);
     }
@@ -116,9 +106,10 @@ public class Graphs implements Graph {
      * @brief [brief description]
      * @details [long description]
      * Time complexity is O(1)
-     * @param s value
+     * @param v value
+     * @param w value
      */
-    public boolean hasEdge(int v,int w) {
+    public boolean hasEdge(final int v,final int w) {
         for(int i : adj[w]) {
             if(i == w) {
                 return true;
@@ -126,29 +117,34 @@ public class Graphs implements Graph {
         }
         return false;
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *
+     * @param String
+     */
+    public void addvertices(final String s) {
+        vertex[size++] = s;
 
-    // public void addvertices(final String s) {
-    //     vertex[size++] = s;
-
-    // }
+    }
     /**
      * @brief [brief description]
      * @details [long description]
      * Time complexity is O(N ^ 2)
      * @return value
      */
-    //  public String toString() {
-    //     StringBuilder s = new StringBuilder();
-    //     s.append(vertices + " vertices, " + edges + " edges" + "\n");
-    //     for (int v = 0; v < vertices; v++) {
-    //         s.append(vertex[v] + ": ");
-    //         for (int w : adj[v]) {
-    //             s.append(vertex[w] + " ");
-    //             //s.substring(0,s.length() - 1);
-    //         }
-    //         s.append("\n");
-    //     }
-    //     return s.toString();
-    // }
+     public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append(vertices + " vertices, " + edges + " edges" + "\n");
+        for (int v = 0; v < vertices; v++) {
+            s.append(vertex[v] + ": ");
+            for (int w : adj[v]) {
+                s.append(vertex[w] + " ");
+                //s.substring(0,s.length() - 1);
+            }
+            s.append("\n");
+        }
+        return s.toString();
+    }
 
 }
