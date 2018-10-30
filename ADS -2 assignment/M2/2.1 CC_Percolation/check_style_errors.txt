@@ -54,11 +54,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 11 errors.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:60:13: '(' is followed by whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Solution.java:3: Class Solution should be declared as final. [FinalClass]
