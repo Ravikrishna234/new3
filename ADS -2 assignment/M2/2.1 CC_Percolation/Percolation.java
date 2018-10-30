@@ -8,14 +8,14 @@ class Percolation {
 		gp = new Graphs((sze * size) + 2);
 		grid = new boolean[size][size];
 	}
-	public boolean isOpen(int r, int c) {
-		return grid[r][c];
-	}
+	// public boolean isOpen(int r, int c) {
+	// 	return grid[r][c];
+	// }
 	public int getIndex(int i, int j) {
 		return (i*size) + j;
 	}
 	public void open(int r, int c) {
-		if (isOpen(r, c) == false) {
+		if (grid[r][c] == false) {
 			grid[r][c] = true;
 			count += 1;
 		}

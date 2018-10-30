@@ -64,9 +64,6 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:5:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:6:21: Parameter sze should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:11:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:11:31: Parameter r should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:11:38: Parameter c should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:14:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:14:29: Parameter i should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:14:36: Parameter j should be final. [FinalParameters]
@@ -75,7 +72,7 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:17:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:17:26: Parameter r should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:17:33: Parameter c should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:18:34: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:18:32: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:23:38: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:26:38: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:29:62: ')' is preceded with whitespace. [ParenPad]
@@ -89,7 +86,7 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:47:62: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Percolation.java:47:63: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 31 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M2\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]
