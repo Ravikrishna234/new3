@@ -1,4 +1,5 @@
-class Percolation {
+/**PERCOLATION.**/
+final class Percolation {
 	/**
 	 * variable.
 	 */
@@ -6,7 +7,7 @@ class Percolation {
 	/**
 	 * variable.
 	 */
-	public int size;
+	private int size;
 	/**
 	 * variable.
 	 */
@@ -33,14 +34,14 @@ class Percolation {
 	 * @return value
 	 */
 	public int getIndex(final int i, final int j) {
-		return (i*size) + j;
+		return (i * size) + j;
 	}
 	/**
 	 * @param r value
 	 * @param c value
 	 */
-	public void open(int r, int c) {
-		if (grid[r][c] == false) {
+	public void open(final int r, final int c) {
+		if (!grid[r][c]) {
 			grid[r][c] = true;
 			count += 1;
 		}
