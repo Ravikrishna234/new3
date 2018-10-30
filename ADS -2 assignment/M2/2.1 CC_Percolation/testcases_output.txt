@@ -3,16 +3,6 @@ Expected Output:
 false
 
 Your Output: 
-25 vertices, 14 edges
-No edges
-25 vertices, 35 edges
-No edges
-25 vertices, 57 edges
-No edges
-25 vertices, 80 edges
-No edges
-25 vertices, 103 edges
-No edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 25
 	at Graphs.addEdge(Graphs.java:110)
 	at Solution.main(Solution.java:10)
@@ -33,13 +23,9 @@ Expected Output:
 true
 
 Your Output: 
-1 vertices, 0 edges
-No edges
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 1 is not between 0 and 0
-	at Percolation.validateVertex(Percolation.java:54)
-	at Percolation.id(Percolation.java:30)
-	at Percolation.connected(Percolation.java:43)
-	at Solution.main(Solution.java:13)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Graphs.addEdge(Graphs.java:109)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -59,12 +45,8 @@ Expected Output:
 true
 
 Your Output: 
-2 vertices, 0 edges
-No edges
-2 vertices, 0 edges
-No edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Graphs.addEdge(Graphs.java:110)
+	at Graphs.addEdge(Graphs.java:109)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
 
@@ -73,15 +55,9 @@ Expected Output:
 false
 
 Your Output: 
-2 vertices, 0 edges
-No edges
-2 vertices, 0 edges
-No edges
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
-	at Percolation.validateVertex(Percolation.java:54)
-	at Percolation.id(Percolation.java:30)
-	at Percolation.connected(Percolation.java:43)
-	at Solution.main(Solution.java:13)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Graphs.addEdge(Graphs.java:109)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -109,8 +85,6 @@ Expected Output:
 true
 
 Your Output: 
-5 vertices, 0 edges
-No edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Graphs.addEdge(Graphs.java:110)
 	at Solution.main(Solution.java:10)
@@ -141,8 +115,6 @@ Expected Output:
 true
 
 Your Output: 
-8 vertices, 2 edges
-No edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
 	at Graphs.addEdge(Graphs.java:110)
 	at Solution.main(Solution.java:10)
@@ -153,8 +125,6 @@ Expected Output:
 true
 
 Your Output: 
-8 vertices, 2 edges
-No edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
 	at Graphs.addEdge(Graphs.java:110)
 	at Solution.main(Solution.java:10)
@@ -185,12 +155,6 @@ Expected Output:
 false
 
 Your Output: 
-50 vertices, 28 edges
-No edges
-50 vertices, 121 edges
-No edges
-50 vertices, 144 edges
-No edges
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 50 is not between 0 and 49
 	at Percolation.validateVertex(Percolation.java:54)
 	at Percolation.id(Percolation.java:30)
@@ -203,12 +167,6 @@ Expected Output:
 true
 
 Your Output: 
-20 vertices, 5 edges
-No edges
-20 vertices, 12 edges
-No edges
-20 vertices, 12 edges
-No edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
 	at Graphs.addEdge(Graphs.java:110)
 	at Solution.main(Solution.java:10)
@@ -229,18 +187,6 @@ Expected Output:
 true
 
 Your Output: 
-60 vertices, 24 edges
-No edges
-60 vertices, 52 edges
-No edges
-60 vertices, 150 edges
-No edges
-60 vertices, 157 edges
-No edges
-60 vertices, 267 edges
-No edges
-60 vertices, 329 edges
-No edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60
 	at Graphs.addEdge(Graphs.java:109)
 	at Solution.main(Solution.java:10)
@@ -271,10 +217,6 @@ Expected Output:
 true
 
 Your Output: 
-13 vertices, 0 edges
-No edges
-13 vertices, 0 edges
-No edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 13
 	at Graphs.addEdge(Graphs.java:110)
 	at Solution.main(Solution.java:10)
