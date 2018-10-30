@@ -1,17 +1,23 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -19,7 +25,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -35,15 +44,21 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -51,7 +66,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -59,7 +77,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -67,7 +88,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -75,7 +99,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -83,7 +110,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -91,7 +121,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -99,15 +132,21 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 13: Passed ##########
+########## Testcase 13: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -115,15 +154,21 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 15: Passed ##########
+########## Testcase 15: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -131,7 +176,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -139,7 +187,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 13
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -147,7 +198,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 52
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -155,7 +209,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -163,7 +220,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 43
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -171,7 +231,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -179,7 +242,10 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -187,6 +253,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 78
+	at Percolation.isOpen(Percolation.java:12)
+	at Percolation.open(Percolation.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 

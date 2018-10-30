@@ -1,14 +1,10 @@
 class Percolation {
 	private boolean[][] grid;
 	public int size;
-	public int count;
-	private int top = 0;
-	private int bottom;
 	private Graphs gp;
+	private int count;
 	Percolation(int sze) {
-		this.size = sze;
 		this.count = 0;
-		this.bottom = sze * sze + 1;
 		gp = new Graphs((sze * size) + 2);
 		grid = new boolean[size][size];
 	}
