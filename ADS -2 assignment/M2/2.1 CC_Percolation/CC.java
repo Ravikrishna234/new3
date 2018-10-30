@@ -34,6 +34,7 @@ final class CC {
     /**
      * @param graph [description]
      * @param v [description]
+     * Time Complexity is O(N)
      */
     private void dfs(final Graphs graph, final int v) {
         marked[v] = true;
@@ -48,6 +49,7 @@ final class CC {
     /**
      * @param v [description]
      * @return [description]
+     * Time Complexity is O(1)
      */
     public int id(final int v) {
 
@@ -56,6 +58,7 @@ final class CC {
     /**
      * @param v [description]
      * @return [description]
+     * Time Complexity is O(1)
      */
     public int size(final int v) {
 
@@ -63,6 +66,7 @@ final class CC {
     }
     /**
      * @return [description]
+     * Time Complexity is O(1)
      */
     public int count() {
         return count;
@@ -71,6 +75,7 @@ final class CC {
       * @param v value
       * @param w value
      * @return [description]
+     * Time Complexity is O(1)
      */
     public boolean connected(final int v, final int w) {
 
@@ -80,13 +85,14 @@ final class CC {
       * @param v value
       * @param w value
      * @return [description]
+     * Time Complexity is O(1)
      */
     public boolean areConnected(final int v, final int w) {
         return id(v) == id(w);
     }
      /**
     * @param v value
-     * @return [description]
+    * Time Complexity is O(1)
      */
     private void validateVertex(final int v) {
         int value = marked.length;

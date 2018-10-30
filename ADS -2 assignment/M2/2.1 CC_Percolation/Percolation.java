@@ -32,6 +32,7 @@ final class Percolation {
      * @param i value
      * @param j value
      * @return value
+     * Time Complexity is O(1)
      */
     public int getIndex(final int i, final int j) {
         return (i * size) + j;
@@ -39,6 +40,7 @@ final class Percolation {
     /**
      * @param r value
      * @param c value
+     * Time Complexity is O(1)
      */
     public void open(final int r, final int c) {
         if (!grid[r][c]) {
@@ -69,6 +71,7 @@ final class Percolation {
     // }
     /**
      * @return value
+     * Time Complexity is O(1)
      */
     public boolean percolates() {
         CC obj = new CC(gp);
