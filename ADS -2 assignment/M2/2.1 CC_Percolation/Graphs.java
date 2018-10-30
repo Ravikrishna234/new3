@@ -105,9 +105,14 @@ public class Graphs implements Graph {
     //     System.out.println("No edges");
     //     return;
     // }
+        if(!hasEdge(v,w)) {
         edges++;
+    }
         adj[v].add(w);
        adj[w].add(v);
+    }
+    public boolean connected(int p, int q) {
+    	return adj[p] == adj[q];
     }
     /**
      * @brief [brief description]
@@ -115,6 +120,15 @@ public class Graphs implements Graph {
      * Time complexity is O(1)
      * @param s value
      */
+    public boolean hasEdge(int v,int w) {
+        for(int c : adj[w]) {
+            if(v == c) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     // public void addvertices(final String s) {
     //     vertex[size++] = s;
 
