@@ -7,7 +7,7 @@ class Solution {
 		Percolation p = new Percolation(n);
 		while(s.hasNextLine()) {
 		String[] tokens = s.nextLine().split(" ");
-		p.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+		p.open(Integer.parseInt(tokens[0]) - 1, Integer.parseInt(tokens[1]) - 1);
 	}
 	//Percolation p = new Percolation(n);
 	System.out.println(p.percolates());

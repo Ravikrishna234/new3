@@ -100,18 +100,17 @@ public class Graphs implements Graph {
 
         // validateVertex(v);
         // validateVertex(w);
-    // if (v == w) {
-    //     System.out.println(vertices + " vertices, " + edges + " edges");
-    //     System.out.println("No edges");
-    //     return;
-    // }
+    if (v == w) {
+        System.out.println(vertices + " vertices, " + edges + " edges");
+        System.out.println("No edges");
+        return;
+    }
+        //if(!hasEdge(v,w)) {
 
         edges++;
+    //}
         adj[v].add(w);
        adj[w].add(v);
-    }
-    public boolean connected(int p, int q) {
-    	return adj[p] == adj[q];
     }
     /**
      * @brief [brief description]
@@ -120,8 +119,8 @@ public class Graphs implements Graph {
      * @param s value
      */
     public boolean hasEdge(int v,int w) {
-        for(int c : adj[w]) {
-            if(v == c) {
+        for(int i : adj[w]) {
+            if(i == w) {
                 return true;
             }
         }

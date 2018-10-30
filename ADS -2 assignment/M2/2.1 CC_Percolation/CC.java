@@ -35,12 +35,12 @@ public class CC {
 
 
     public int id(int v) {
-        validateVertex(v);
+
         return id[v];
     }
 
     public int size(int v) {
-        validateVertex(v);
+
         return size[id[v]];
     }
 
@@ -50,13 +50,10 @@ public class CC {
     }
 
     public boolean connected(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
+
         return id(v) == id(w);
     }
     public boolean areConnected(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
         return id(v) == id(w);
     }
 

@@ -9,7 +9,7 @@ class Percolation {
 		this.size = sze;
 		this.count = 0;
 		this.bottom = sze * sze + 1;
-		gp = new Graphs(sze);
+		gp = new Graphs((sze * size) + 2);
 		grid = new boolean[size][size];
 	}
 	public boolean isOpen(int r, int c) {
@@ -29,16 +29,16 @@ class Percolation {
 		if (r == size - 1) {
 			gp.addEdge(r,c);
 		}
-        if (c < size - 1 && isOpen(r, c + 1)) { //bottom
+        if (c < size - 1 && grid[r][c + 1]) { //bottom
         	gp.addEdge(getIndex(r, c), getIndex(r, c + 1) );
         }
-        if (c > 0 && isOpen(r, c - 1)) { // left
+        if (c > 0 && grid[r][c - 1]) { // left
         	gp.addEdge(getIndex(r, c), getIndex(r, c - 1) );
         }
-        if ( r < size - 1 && isOpen(r + 1, c)) { //right
+        if ( r < size - 1 && grid[r + 1][c]) { //right
         	gp.addEdge(getIndex(r, c), getIndex(r + 1, c) );
         }
-        if (r > 0 && isOpen(r - 1, c)) { // top
+        if (r > 0 && grid[r - 1][c]) { // top
         	gp.addEdge(getIndex(r, c), getIndex(r - 1, c) );
         }
 	}
