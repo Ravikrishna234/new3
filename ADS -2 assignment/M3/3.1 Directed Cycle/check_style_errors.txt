@@ -1,32 +1,19 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:5: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:12:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:12:26: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:12:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:16: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:17: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:20: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:21:22: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:21:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:21:33: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:21:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:23:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:23:40: Expected @param tag for 'graph'. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:27: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:28: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:34:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:53: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:60: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:61: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:70:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:76: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:80: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:31: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:32:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:39: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:45:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:86: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Cycle.java:90: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
 Starting audit...
