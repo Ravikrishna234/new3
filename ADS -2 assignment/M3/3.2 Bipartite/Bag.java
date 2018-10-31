@@ -1,120 +1,106 @@
-/*************************************************************************
- *  Compilation:  javac Bag.java
- *  Execution:    java Bag < input.txt
- *
- *  A generic bag or multiset, implemented using a linked list.
- *
- *************************************************************************/
-
+/**.
+ * { item_description }
+ */
 import java.util.Iterator;
-import java.util.NoSuchElementException;
-/**graphimplementation.**/
-/**
- * @param <Item> value
+/**.
+ * Class for bag.
+ *
+ * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
-    /**
-     * variable.
+    /**.
+     * { var_description }
      */
-    private int size;
-    /**
-     * variable.
+    private int n;
+    /**.
+     * { var_description }
      */
     private Node first;
-    /**graphimplementation.**/
+    /**.
+     * Class for node.
+     */
     private class Node {
-    /**
-     * variable.
-     */
+        /**.
+         * { var_description }
+         */
         private Item item;
-    /**
-     * variable.
-     */
+        /**.
+         * { var_description }
+         */
         private Node next;
     }
+
    /**
      * Create an empty stack.
      */
     public Bag() {
         first = null;
-        size = 0;
+        n = 0;
     }
-
-   /**
-     * Is the BAG empty?
-     * @return value
-     * Time complexity is O(1)
-     */
+/**.
+ * Determines if empty.
+ *
+ * @return     True if empty, False otherwise.
+ */
     public boolean isEmpty() {
         return first == null;
     }
-
-   /**
-     * Return the number of items in the bag.
-     * Time complexity is O(1)
-     * @return value
-     */
+/**.
+ * { function_description }
+ *
+ * @return     { description_of_the_return_value }
+ */
     public int size() {
-        return size;
+        return n;
     }
-
-   /**
-     * Add the item to the bag.
-     * Time complexity is O(1)
-     * @param item value
-     */
+/**.
+ * { function_description }
+ *
+ * @param      item  The item
+ */
     public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        size++;
+        n++;
     }
-
-
-   /**
-     * Return an iterator that iterates over the items in the bag.
-     * Time complexity is O(N)
-     * @return value
-     */
+/**.
+ * { function_description }
+ *
+ * @return     { description_of_the_return_value }
+ */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
-
-    // an iterator, doesn't implement remove() since it's optional
-    /**graphimplementation.**/
+/**.
+ * Class for list iterator.
+ */
     private class ListIterator implements Iterator<Item> {
-    /**
-     * variable.
-     */
-        private Node current = first;
-        /**
-         * @brief [brief description]
-         * @details [long description]
-         * Time complexity is O(1)
-         * @return value
+        /**.
+         * { var_description }
          */
-        public boolean hasNext()  {
+        private Node current = first;
+        /**.
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext() {
             return current != null;
         }
-        /**
-         * @brief [brief description]
-         * @details [long description]
-         * Time complexity is O(1)
+        /**.
+         * { function_description }
          */
-        public void remove()      {
+        public void remove() {
             throw new UnsupportedOperationException();
-         }
-         /**
-           * @brief [brief description]
-          * @details [long description]
-          * Time complexity is O(1)
-          * @return value
-          */
+        }
+        /**.
+         * { function_description }
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
             Item item = current.item;
             current = current.next;
             return item;
@@ -122,3 +108,4 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
 }
+

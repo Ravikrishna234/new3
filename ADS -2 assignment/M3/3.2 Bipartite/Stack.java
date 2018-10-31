@@ -1,72 +1,77 @@
+/**.
+ * { item_description }
+ */
 import java.util.Iterator;
+/**.
+ * { item_description }
+ */
 import java.util.NoSuchElementException;
-/**hasacycle.**/
-/**
- * @param <Item> value
+/**.
+ * List of .
+ *
+ * @param      <Item>  The item
  */
 public class Stack<Item> implements Iterable<Item> {
-    /**
-     * variable.
+    /**.
+     * { var_description }
      */
-    private int num;
-    /**
-     * variable.
+    private int n;
+    /**.
+     * { var_description }
      */
     private Node first;
-    /**hasacycle.**/
+    /**.
+     * Class for node.
+     */
     private class Node {
-     /**
-     * variable.
-     */
+        /**.
+         * { var_description }
+         */
         private Item item;
-    /**
-     * variable.
-     */
+        /**.
+         * { var_description }
+         */
         private Node next;
     }
-
-   /**
-     * Create an empty stack.
+    /**.
+     * Constructs the object.
      */
     public Stack() {
         first = null;
-        num = 0;
+        n = 0;
     }
-
-   /**
-     * Is the stack empty?
-     * Time complexity is O(1)
-     * @return value
+    /**.
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
     }
-
-   /**
-     * Return the number of items in the stack.
-     * Time complexity is O(1)
-     * @return value
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
-        return num;
+        return n;
     }
-
-   /**
-     * Add the item to the stack.
-     * Time complexity is O(1)
-     * @param item value
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
      */
     public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        num++;
+        n++;
     }
-
-   /**
-     * @return value
-     * Time complexity is O(1)
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public Item pop() {
         if (isEmpty()) {
@@ -74,26 +79,24 @@ public class Stack<Item> implements Iterable<Item> {
         }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        num--;
+        n--;
         return item;                   // return the saved item
     }
-
-
-   /**
-     * @return value
-     * Time complexity is O(1)
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public Item peek() {
         if (isEmpty()) {
-    throw new RuntimeException("Stack underflow");
-    }
+            throw new RuntimeException("Stack underflow");
+        }
         return first.item;
     }
-
-   /**
-     * Return string representation.
-     * Time complexity is O(N)
-     * @return value
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -102,64 +105,50 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-
-
-   /**
-     * @return value
-     * Time complexity is O(N)
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator() {
         return new ListIterator();
     }
-
-    /**hasacycle.**/
+    /**.
+     * Class for list iterator.
+     */
     private class ListIterator implements Iterator<Item> {
         /**.
-         * variable.
+         * { var_description }
          */
         private Node current = first;
-        /**
-         * @return value
-         * Time complexity is O(1)
+        /**.
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
-             }
-             /**
-              * @brief [brief description]
-              * @details [long description]
-              * Time complexity is O(1)
-              */
+        }
+        /**.
+         * { function_description }
+         */
         public void remove() {
-        throw new UnsupportedOperationException();
-             }
-            /**
-             * @return value
-             * Time complexity is O(1)
-             */
+            throw new UnsupportedOperationException();
+        }
+        /**.
+         * { function_description }
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
             if (!hasNext()) {
-             throw new NoSuchElementException();
-        }
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;
         }
     }
-
-
-   /**
-     * A test client.
-     */
-/*    public static void main(String[] args) {
-        Stack<String> s = new Stack<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            if (!item.equals("-")) s.push(item);
-            else if (!s.isEmpty()) StdOut.print(s.pop() + " ");
-        }
-        StdOut.println("(" + s.size() + " left on stack)");
-    }*/
 }
 
 
