@@ -21,6 +21,7 @@ class DirectedCycle {
     private void dfs(DiGraph G, int v) {
         onStack[v] = true;
         marked[v] = true;
+
         for (int w : G.adj(v)) {
 
             // short circuit if directed cycle found
@@ -45,6 +46,7 @@ class DirectedCycle {
         }
         onStack[v] = false;
     }
+
 
     /**
      * Does the digraph have a directed cycle?
