@@ -2,7 +2,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**hasacycle.**/
 /**
- * @param Item value
+ * @param <Item> value
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
