@@ -35,6 +35,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Is the stack empty?
+     * Time complexity is O(1)
      * @return value
      */
     public boolean isEmpty() {
@@ -43,6 +44,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Return the number of items in the stack.
+     * Time complexity is O(1)
      * @return value
      */
     public int size() {
@@ -51,6 +53,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Add the item to the stack.
+     * Time complexity is O(1)
      * @param item value
      */
     public void push(final Item item) {
@@ -63,6 +66,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * @return value
+     * Time complexity is O(1)
      */
     public Item pop() {
         if (isEmpty()) {
@@ -77,6 +81,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * @return value
+     * Time complexity is O(1)
      */
     public Item peek() {
         if (isEmpty()) {
@@ -87,6 +92,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Return string representation.
+     * Time complexity is O(N)
      * @return value
      */
     public String toString() {
@@ -100,6 +106,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * @return value
+     * Time complexity is O(N)
      */
     public Iterator<Item> iterator() {
         return new ListIterator();
@@ -113,6 +120,7 @@ public class Stack<Item> implements Iterable<Item> {
         private Node current = first;
         /**
          * @return value
+         * Time complexity is O(1)
          */
         public boolean hasNext() {
             return current != null;
@@ -120,12 +128,14 @@ public class Stack<Item> implements Iterable<Item> {
              /**
               * @brief [brief description]
               * @details [long description]
+              * Time complexity is O(1)
               */
         public void remove() {
         throw new UnsupportedOperationException();
              }
             /**
              * @return value
+             * Time complexity is O(1)
              */
         public Item next() {
             if (!hasNext()) {

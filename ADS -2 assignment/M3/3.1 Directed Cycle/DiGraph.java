@@ -69,6 +69,7 @@ public class DiGraph {
     /**
      * @brief [brief description]
      * @details [long description]
+     * Time complexity is O(N ^ 2)
      * @return value
      */
     public DiGraph reverse() {

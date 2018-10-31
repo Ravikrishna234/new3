@@ -33,7 +33,7 @@ class DirectedCycle {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is E + V
      * @param graph value
      * @param v value
      */
@@ -65,6 +65,7 @@ class DirectedCycle {
 
     /**
      * @return value
+     * Time complexity is O(1)
      */
     public boolean hasCycle() {
         return cycle != null;
@@ -72,6 +73,7 @@ class DirectedCycle {
 
     /**
      * @return value
+     * Time complexity is O(1)
      */
     public Iterable<Integer> cycle() {
         return cycle;
@@ -80,6 +82,7 @@ class DirectedCycle {
 
     /**
      * @return value
+     * Time complexity is O(N)
      */
     private boolean check() {
 

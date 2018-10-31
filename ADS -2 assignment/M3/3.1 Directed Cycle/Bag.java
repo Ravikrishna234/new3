@@ -91,6 +91,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * @brief [brief description]
          * @details [long description]
+         * Time complexity is O(1)
          * @return value
          */
         public boolean hasNext()  {
@@ -99,6 +100,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * @brief [brief description]
          * @details [long description]
+         * Time complexity is O(1)
          */
         public void remove()      {
             throw new UnsupportedOperationException();
@@ -106,6 +108,7 @@ public class Bag<Item> implements Iterable<Item> {
          /**
           * @brief [brief description]
           * @details [long description]
+          * Time complexity is O(1)
           * @return value
           */
         public Item next() {
