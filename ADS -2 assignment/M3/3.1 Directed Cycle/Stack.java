@@ -2,12 +2,24 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**hasacycle.**/
 public class Stack<Item> implements Iterable<Item> {
-    private int N;          // size of the stack
-    private Node first;     // top of stack
+    /**
+     * variable
+     */
+    private int N;
+      /**
+     * variable
+     */
+    private Node first;
 
-    // helper linked list class
+    /**hasacycle.**/
     private class Node {
+    /**
+     * variable
+     */
         private Item item;
+    /**
+     * variable
+     */
         private Node next;
     }
 
@@ -51,7 +63,9 @@ public class Stack<Item> implements Iterable<Item> {
      * @return value
      */
     public Item pop() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
         N--;
@@ -63,7 +77,9 @@ public class Stack<Item> implements Iterable<Item> {
      * @return value
      */
     public Item peek() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         return first.item;
     }
 
@@ -73,8 +89,10 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (Item item : this)
+        for (Item item : this) {
             s.append(item + " ");
+        }
+
         return s.toString();
     }
 
@@ -87,8 +105,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     /**hasacycle.**/
-
-    private class ListIterator implements Iterator<Item> {
+      private class ListIterator implements Iterator<Item> {
         private Node current = first;
         /**
          * @return value
