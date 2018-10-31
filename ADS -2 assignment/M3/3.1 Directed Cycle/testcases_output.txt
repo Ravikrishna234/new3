@@ -22,23 +22,19 @@ Your Output:
 Cycle exists.
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-1 vertices, 0 edges
-No edges
-Cycle doesn't exists.
+Cycle exists.
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-4 vertices, 5 edges
-No edges
 Cycle exists.
 ----------------------------------------
 
