@@ -8,8 +8,7 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Stack.java:4: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Stack.java:8:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Stack.java:108:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Stack.java:7: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Stack.java:11:17: Name 'Num' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.

@@ -1,11 +1,14 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**hasacycle.**/
+/**
+ * @param Item value
+ */
 public class Stack<Item> implements Iterable<Item> {
     /**
      * variable.
      */
-    private int N;
+    private int Num;
     /**
      * variable.
      */
@@ -27,7 +30,7 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public Stack() {
         first = null;
-        N = 0;
+        Num = 0;
     }
 
    /**
@@ -43,7 +46,7 @@ public class Stack<Item> implements Iterable<Item> {
      * @return value
      */
     public int size() {
-        return N;
+        return Num;
     }
 
    /**
@@ -55,7 +58,7 @@ public class Stack<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        Num++;
     }
 
    /**
@@ -67,7 +70,7 @@ public class Stack<Item> implements Iterable<Item> {
         }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        N--;
+        Num--;
         return item;                   // return the saved item
     }
 
@@ -103,8 +106,10 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     /**hasacycle.**/
-
     private class ListIterator implements Iterator<Item> {
+        /**.
+         * variable.
+         */
         private Node current = first;
         /**
          * @return value
