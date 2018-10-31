@@ -2,12 +2,23 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**hasacycle.**/
 public class Stack<Item> implements Iterable<Item> {
-    private int N;          // size of the stack
-    private Node first;     // top of stack
-
-    // helper linked list class
+    /**
+     * variable.
+     */
+    private int N;
+    /**
+     * variable.
+     */
+    private Node first;
+    /**hasacycle.**/
     private class Node {
+     /**
+     * variable.
+     */
         private Item item;
+    /**
+     * variable.
+     */
         private Node next;
     }
 
