@@ -8,7 +8,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * variable.
      */
-    private int Num;
+    private int num;
     /**
      * variable.
      */
@@ -30,7 +30,7 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public Stack() {
         first = null;
-        Num = 0;
+        num = 0;
     }
 
    /**
@@ -46,7 +46,7 @@ public class Stack<Item> implements Iterable<Item> {
      * @return value
      */
     public int size() {
-        return Num;
+        return num;
     }
 
    /**
@@ -58,7 +58,7 @@ public class Stack<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        Num++;
+        num++;
     }
 
    /**
@@ -70,7 +70,7 @@ public class Stack<Item> implements Iterable<Item> {
         }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        Num--;
+        num--;
         return item;                   // return the saved item
     }
 
