@@ -20,7 +20,7 @@ class DirectedCycle {
     /**
      * @param graph value
      */
-    public DirectedCycle(final DiGraph graph) {
+    DirectedCycle(final DiGraph graph) {
         marked  = new boolean[graph.vertex()];
         onStack = new boolean[graph.vertex()];
         edgeTo  = new int[graph.vertex()];
@@ -34,8 +34,8 @@ class DirectedCycle {
      * @brief [brief description]
      * @details [long description]
      *
-     * @param DiGraph value
-     * @param int value
+     * @param graph value
+     * @param v value
      */
     private void dfs(final DiGraph graph, final int v) {
         onStack[v] = true;
@@ -46,15 +46,10 @@ class DirectedCycle {
             // short circuit if directed cycle found
             if (cycle != null) {
              return;
-        }
-            // found new vertex, so recur
-            else if (!marked[w]) {
+        } else if (!marked[w]) { // found new vertex, so recur
                 edgeTo[w] = v;
                 dfs(graph, w);
-            }
-
-            // trace back directed cycle
-            else if (onStack[w]) {
+            } else if (onStack[w]) { // trace back directed cycle
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
