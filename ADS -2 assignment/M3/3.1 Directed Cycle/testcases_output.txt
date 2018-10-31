@@ -1,25 +1,25 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-Cycle doesn't exists
+Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-Cycle doesn't exists
+Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Cycle exists
+Cycle exists.
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -29,7 +29,7 @@ Cycle exists.
 Your Output: 
 1 vertices, 0 edges
 No edges
-Cycle doesn't exists
+Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -39,30 +39,30 @@ Cycle exists.
 Your Output: 
 4 vertices, 5 edges
 No edges
-Cycle exists
+Cycle exists.
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Cycle exists
+Cycle exists.
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-Cycle doesn't exists
+Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Cycle exists
+Cycle exists.
 ----------------------------------------
 

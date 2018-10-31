@@ -12,10 +12,10 @@ class Solution {
 		}
 			DirectedCycle cycle = new DirectedCycle(dg);
 		if(cycle.hasCycle()){
-			System.out.println("Cycle exists");
+			System.out.println("Cycle exists.");
 
 		} else {
-			System.out.println("Cycle doesn't exists");
+			System.out.println("Cycle doesn't exists.");
 		}
 	}
 }
