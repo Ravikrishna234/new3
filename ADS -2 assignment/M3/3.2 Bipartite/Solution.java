@@ -28,7 +28,7 @@ final class Solution {
             System.out.println("Graph is bipartite");
 
         } else {
-            System.out.println("Graph is not bipartite");
+            System.out.println("Graph is not a bipartite");
         }
     }
 }
