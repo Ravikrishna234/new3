@@ -70,8 +70,8 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Solution.java:3:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Solution.java:9:22: 'while' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Solution.java:11: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Solution.java:13:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Solution.java:13:37: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Solution.java:14:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M3\3.1 Directed Cycle\Solution.java:14:37: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 11 errors.
 Starting audit...

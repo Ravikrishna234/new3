@@ -19,7 +19,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists
+Cycle exists
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -39,7 +39,7 @@ Cycle exists.
 Your Output: 
 4 vertices, 5 edges
 No edges
-Cycle doesn't exists
+Cycle exists
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -47,7 +47,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists
+Cycle exists
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -63,6 +63,6 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists
+Cycle exists
 ----------------------------------------
 

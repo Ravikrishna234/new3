@@ -5,11 +5,12 @@ class Solution {
 		int num1 = Integer.parseInt(s.nextLine());
 		int num2 = Integer.parseInt(s.nextLine());
 		DiGraph dg = new DiGraph(num1);
-		DirectedCycle cycle = new DirectedCycle(dg);
+
 		while(s.hasNextLine()) {
 			String[] tokens = s.nextLine().split(" ");
 			dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
+			DirectedCycle cycle = new DirectedCycle(dg);
 		if(cycle.hasCycle()){
 			System.out.println("Cycle exists");
 
