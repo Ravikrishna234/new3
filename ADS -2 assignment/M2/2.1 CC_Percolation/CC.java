@@ -18,7 +18,7 @@ final class CC {
     private int count;
     /**
      * @param graph value
-     * Time Complexity is O(N)
+     * Time Complexity is E + 2V
      */
 
     public CC(final Graphs graph) {
