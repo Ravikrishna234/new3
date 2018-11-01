@@ -21,7 +21,7 @@ final class CC {
      * Time Complexity is E + 2V
      */
 
-    public CC(final Graphs graph) {
+    CC(final Graphs graph) {
         marked = new boolean[graph.vertex()];
         id = new int[graph.vertex()];
         size = new int[graph.vertex()];
