@@ -44,6 +44,7 @@ public class Stack<Item> implements Iterable<Item> {
      * Determines if empty.
      *
      * @return     True if empty, False otherwise.
+     * Time complexity is O(1)
      */
     public boolean isEmpty() {
         return first == null;
@@ -52,13 +53,15 @@ public class Stack<Item> implements Iterable<Item> {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * Time complexity is O(1)
      */
     public int size() {
         return n;
+
     }
     /**.
      * { function_description }
-     *
+     * Time complexity is O(1)
      * @param      item  The item
      */
     public void push(final Item item) {
@@ -70,7 +73,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     *
+     * Time complexity is O(1)
      * @return     { description_of_the_return_value }
      */
     public Item pop() {
@@ -84,7 +87,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     *
+     * Time complexity is O(1)
      * @return     { description_of_the_return_value }
      */
     public Item peek() {
@@ -95,7 +98,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * Returns a string representation of the object.
-     *
+     * Time complexity is O(N)
      * @return     String representation of the object.
      */
     public String toString() {
@@ -123,7 +126,7 @@ public class Stack<Item> implements Iterable<Item> {
         private Node current = first;
         /**.
          * Determines if it has next.
-         *
+         * Time complexity is O(1)
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
@@ -131,13 +134,14 @@ public class Stack<Item> implements Iterable<Item> {
         }
         /**.
          * { function_description }
+         * Time complexity is O(1)
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**.
          * { function_description }
-         *
+         * Time complexity is O(1)
          * @return     { description_of_the_return_value }
          */
         public Item next() {
