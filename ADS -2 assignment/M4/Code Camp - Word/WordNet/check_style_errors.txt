@@ -505,13 +505,13 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:3:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:10: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:10:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:11:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:14:30: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:18: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:18:91: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:21:24: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:11:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:14:34: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:15:30: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:19: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:19:91: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M4\Code Camp - Word\WordNet\Solution.java:22:24: 'catch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...

@@ -7,10 +7,11 @@ class Solution {
 		String input = s.nextLine();
 		try {
 		WordNet w = new WordNet(sysnsets, hypernymsets);
-		if(input.equals("Graph"))
-		if(!w.isflag()) {
-			w.print();
-		} else {
+		if(input.equals("Graph")) {
+				if(!w.isflag()) {
+					w.print();
+				}
+			} else if(input.equals("Queries")) {
 			while(s.hasNextLine()) {
 				String[] tokens = s.nextLine().split(" ");
 				String str = w.sap(tokens[0], tokens[1]);
