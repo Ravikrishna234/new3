@@ -1,4 +1,4 @@
-public class LinearProbingHashST<Key, Value> {
+class LinearProbingHashST<Key, Value> {
     private static final int INIT_CAPACITY = 4;
 
     private int n;           // number of key-value pairs in the symbol table
@@ -52,17 +52,29 @@ public class LinearProbingHashST<Key, Value> {
      * @return {@code true} if this symbol table contains {@code key};
      *         {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
+     * Time complexity is O(1)
      */
     public boolean contains(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to contains() is null");
         return get(key) != null;
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(1)
+     * @param key [description]
+     * @return [description]
+     */
     // hash function for keys - returns value between 0 and M-1
     private int hash(Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        return (key.hashCode() * 11) % m;
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N)
+     * @param capacity [description]
+     */
     // resizes the hash table to the given capacity by re-hashing all of the keys
     private void resize(int capacity) {
         LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
@@ -82,8 +94,11 @@ public class LinearProbingHashST<Key, Value> {
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
      *
+     *
      * @param  key the key
      * @param  val the value
+     * Time complexity is in average case (constant)
+     * Time complexity in worst case O(log(N))
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(Key key, Value val) {
@@ -110,10 +125,10 @@ public class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Returns the value associated with the specified key.
-     * @param key the key
-     * @return the value associated with {@code key};
-     *         {@code null} if no such value
+     * @param  key the key
+     * @param  val the value
+     * Time complexity is in average case (constant)
+     * Time complexity in worst case O(log(N))
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(Key key) {
@@ -125,10 +140,10 @@ public class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table
-     * (if the key is in this symbol table).
-     *
      * @param  key the key
+     * @param  val the value
+     * Time complexity is in average case (constant)
+     * Time complexity in worst case O(log(N))
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void delete(Key key) {
@@ -163,59 +178,48 @@ public class LinearProbingHashST<Key, Value> {
         // halves size of array if it's 12.5% full or less
         if (n > 0 && n <= m/8) resize(m/2);
 
-        assert check();
+        //assert check();
     }
 
-    /**
-     * Returns all keys in this symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
-     * use the foreach notation: {@code for (Key key : st.keys())}.
-     *
-     * @return all keys in this symbol table
-     */
-    public Iterable<Key> keys() {
-        Queue<Key> queue = new Queue<Key>();
-        for (int i = 0; i < m; i++)
-            if (keys[i] != null) queue.enqueue(keys[i]);
-        return queue;
-    }
 
     // integrity check - don't check after each put() because
     // integrity not maintained during a delete()
-    private boolean check() {
+    // private boolean check() {
 
-        // check that hash table is at most 50% full
-        if (m < 2*n) {
-            System.err.println("Hash table size m = " + m + "; array size n = " + n);
-            return false;
+    //     // check that hash table is at most 50% full
+    //     if (m < 2*n) {
+    //         System.err.println("Hash table size m = " + m + "; array size n = " + n);
+    //         return false;
+    //     }
+
+    //     // check that each key in table can be found by get()
+    //     for (int i = 0; i < m; i++) {
+    //         if (keys[i] == null) continue;
+    //         else if (get(keys[i]) != vals[i]) {
+    //             System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N)
+     */
+    public void display() {
+        if(size() == 0) {
+            System.out.println("{}");
+            return;
         }
-
-        // check that each key in table can be found by get()
-        for (int i = 0; i < m; i++) {
-            if (keys[i] == null) continue;
-            else if (get(keys[i]) != vals[i]) {
-                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
-                return false;
+        String str = "{";
+        for(int i=0; i<m;i++) {
+            if(keys[i] != null) {
+                str += keys[i] + ":" + vals[i] + ", ";
             }
         }
-        return true;
-    }
-
-
-    /**
-     * Unit tests the {@code LinearProbingHashST} data type.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        // LinearProbingHashST<String, Integer> st = new LinearProbingHashST<String, Integer>();
-        // for (int i = 0; !StdIn.isEmpty(); i++) {
-        //     String key = StdIn.readString();
-        //     st.put(key, i);
-        // }
-
-        // // print keys
-        // for (String s : st.keys())
-        //     StdOut.println(s + " " + st.get(s));
+        str = str.substring(0, str.length()-2);
+        str += "}";
+        System.out.println(str);
     }
 }
