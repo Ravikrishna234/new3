@@ -19,13 +19,18 @@ class PageRank {
 	 * @details [long description]
 	 * @param g value
 	 */
-	PageRank(Digraph g) {
+	PageRank(final Digraph g) {
 		this.graph = g;
 		this.vertices = g.V();
 		a = new double[this.vertices];
 	}
-
-	public void computerank(Digraph g) {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(N ^ 2)
+	 * @param g value
+	 */
+	public void computerank(final Digraph g) {
 	 double f = (double)vertices;
 		for(int i = 0; i < vertices; i++) {
 			a[i] = 1/f;
