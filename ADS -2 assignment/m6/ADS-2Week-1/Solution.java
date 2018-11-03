@@ -80,7 +80,7 @@ class PageRank {
 	public String toString() {
 		String str = "";
 		for(int i = 0; i < vertices; i++) {
-			str += i + "-" + a[i] + "\n";
+			str += i + " - " + a[i] + "\n";
 		}
 		return str;
 
