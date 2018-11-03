@@ -23,7 +23,10 @@ class PageRank {
 		this.graph = g;
 		this.vertices = g.V();
 		a = new double[this.vertices];
-		double f = (double)vertices;
+	}
+
+	public void computerank(Digraph g) {
+	 double f = (double)vertices;
 		for(int i = 0; i < vertices; i++) {
 			a[i] = 1/f;
 			//System.out.println(a[i]);
@@ -50,31 +53,10 @@ class PageRank {
 		}
 
 	}
-	//public void computerank(Digraph g) {
-	// 	for(int i = 0; i < vertices; i++) {
-	// 		a[i] = 1/vertices;
-	// 		//System.out.println(a[i]);
-	// 	}
-	// 	int temp = vertices;
-	// 	while(temp > 0) {
-	// 	for(int i = 0; i < vertices; i++) {
-	// 		Queue q = g.connected(i);
-	// 		int t = q.size();
-	// 		if(t == 0) {
-	// 			a[i] = 0;
-	// 		}
-	// 		while(t > 0) {
-	// 			 int c = (int)q.dequeue();
-	// 			a[i] = a[c] / g.outdegree(c);
-	// 			t--;
-	// 		}
-	// 		}
-	// 	}
-	// 	temp--;
-	// }
 	/**
 	 * @brief [brief description]
 	 * @details [long description]
+	 * Time complexity is O(N)
 	 * @return value
 	 */
 	public String toString() {
@@ -125,7 +107,7 @@ public class Solution {
 
 		// Create page rank object and pass the graph object to the constructor
 		PageRank p = new PageRank(g);
-		//p.computerank(g);
+		p.computerank(g);
 		System.out.println(p);
 		// print the page rank object
 
