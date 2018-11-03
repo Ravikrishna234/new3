@@ -30,28 +30,28 @@ class PageRank {
      * @param g value
      */
     public void computerank(final Digraph g) {
-     double f = (double) vertices;
+     double divide = (double) vertices;
         for (int i = 0; i < vertices; i++) {
-            a[i] = 1 / f;
+            a[i] = 1 / divide;
             //System.out.println(a[i]);
         }
         int temp = vertices;
         while (temp >= 0) {
         for (int i = 0; i < vertices; i++) {
             Queue q = g.connected(i);
-            int t = q.size();
-            if (t == 0) {
+            int temp1 = q.size();
+            if (temp1 == 0) {
                 a[i] = 0;
             }
 
-            double t1 = 0;
-            while (t > 0) {
+            double temp2 = 0;
+            while (temp1 > 0) {
                  int c = (int) q.dequeue();
 
-        t1 = a[c] / (double) g.outdegree(c);
-                t--;
+        temp2 = a[c] / (double) g.outdegree(c);
+                temp1--;
             }
-            a[i] = t1;
+            a[i] = temp2;
             }
         temp--;
         }
