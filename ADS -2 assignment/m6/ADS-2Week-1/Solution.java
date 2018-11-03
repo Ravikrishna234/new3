@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**PAGERANK.**/
 class PageRank {
 	/**
@@ -37,19 +36,19 @@ class PageRank {
 			//System.out.println(a[i]);
 		}
 		int temp = vertices;
-		while(temp >= 0) {
-		for(int i = 0; i < vertices; i++) {
+		while (temp >= 0) {
+		for (int i = 0; i < vertices; i++) {
 			Queue q = g.connected(i);
 			int t = q.size();
-			if(t == 0) {
+			if (t == 0) {
 				a[i] = 0;
 			}
 
 			double t1 = 0;
-			while(t > 0) {
+			while (t > 0) {
 				 int c = (int)q.dequeue();
 
-				t1 = a[c] /(double) g.outdegree(c);
+		t1 = a[c] / (double) g.outdegree(c);
 				t--;
 			}
 			a[i] = t1;
@@ -66,7 +65,7 @@ class PageRank {
 	 */
 	public String toString() {
 		String str = "";
-		for(int i = 0; i < vertices; i++) {
+		for (int i = 0; i < vertices; i++) {
 			str += i + " - " + a[i] + "\n";
 		}
 		return str;
@@ -98,37 +97,17 @@ public class Solution {
 		while (j < n) {
 			String[] tokens = s.nextLine().split(" ");
 			for (int i = 1; i < tokens.length; i++) {
-				g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+				g.addEdge(Integer.parseInt(tokens[0]),
+					Integer.parseInt(tokens[i]));
 			}
 			j++;
 		}
 		System.out.println(g);
-		// read the first line of the input to get the number of vertices
-
-		// iterate count of vertices times
-		// to read the adjacency list from std input
-		// and build the graph
-
-
-		// Create page rank object and pass the graph object to the constructor
 		PageRank p = new PageRank(g);
 		p.computerank(g);
 		System.out.println(p);
-		// print the page rank object
-
-		// This part is only for the final test case
-
 		// File path to the web content
 		String file = "WebContent.txt";
-		//WebSearch w = new WebSearch(file);
-
-		// instantiate web search object
-		// and pass the page rank object and the file path to the constructor
-
-		// read the search queries from std in
-		// remove the q= prefix and extract the search word
-		// pass the word to iAmFeelingLucky method of web search
-		// print the return value of iAmFeelingLucky
 
 	}
 }

@@ -89,25 +89,14 @@ Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:34:29: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:35:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:36:33: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:36:34: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:40:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:41:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:44:27: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:49:30: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:50:47: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:52:44: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:69:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:82: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:101: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:106: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:113: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:126: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:33:29: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:34:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:35:33: '/' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:35:34: '/' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:49:47: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m6\ADS-2Week-1\Solution.java:81: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
