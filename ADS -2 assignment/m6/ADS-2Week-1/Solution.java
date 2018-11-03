@@ -9,7 +9,7 @@ class PageRank {
 	/**
 	 * variable.
 	 */
-	private float[] a;
+	private double[] a;
 	/**
 	 * variable.
 	 */
@@ -22,14 +22,14 @@ class PageRank {
 	PageRank(Digraph g) {
 		this.graph = g;
 		this.vertices = g.V();
-		a = new float[this.vertices];
-		float f = (float)vertices;
+		a = new double[this.vertices];
+		double f = (double)vertices;
 		for(int i = 0; i < vertices; i++) {
 			a[i] = 1/f;
 			//System.out.println(a[i]);
 		}
 		int temp = vertices;
-		while(temp > 0) {
+		while(temp >= 0) {
 		for(int i = 0; i < vertices; i++) {
 			Queue q = g.connected(i);
 			int t = q.size();
@@ -37,12 +37,14 @@ class PageRank {
 				a[i] = 0;
 			}
 
-
+			double t1 = 0;
 			while(t > 0) {
 				 int c = (int)q.dequeue();
-				a[i] = a[c] / g.outdegree(c);
+
+				t1 = a[c] /(double) g.outdegree(c);
 				t--;
 			}
+			a[i] = t1;
 			}
 		temp--;
 		}
@@ -70,6 +72,11 @@ class PageRank {
 	// 	}
 	// 	temp--;
 	// }
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * @return value
+	 */
 	public String toString() {
 		String str = "";
 		for(int i = 0; i < vertices; i++) {
