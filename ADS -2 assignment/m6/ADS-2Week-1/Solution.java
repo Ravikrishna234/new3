@@ -20,7 +20,7 @@ class PageRank {
      */
     PageRank(final Digraph g) {
         this.graph = g;
-        this.vertices = g.vert();
+        this.vertices = g.V();
         a = new double[this.vertices];
     }
     /**
