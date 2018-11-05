@@ -2,36 +2,12 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Edge.java:22: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Edge.java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Edge.java:24:27: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Edge.java:24:40: 'w' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Edge.java:24:56: 'weight' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Edge.java:67:6: '}' at column 6 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Edge.java:70:6: '}' at column 6 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:20: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:39: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:41:54: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:60:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:68:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:80:67: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:80:68: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:110:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'degree' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'degree' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:110:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:114:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'edges' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'edges' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:114:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:121:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:122: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:124: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:133:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:133:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\IndexMinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\IndexMinPQ.java:3: Missing a Javadoc comment. [JavadocType]
@@ -138,46 +114,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 102 errors.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:4: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:6: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:13:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:13:20: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:13:38: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:18: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:21: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:22: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:29:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:29:23: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:29:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:29:44: Parameter s should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:39:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:39:23: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:39:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:39:44: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:43: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:47: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:48: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:70: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:71: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:75: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:77:22: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:77:23: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:82:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:82:27: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:82:45: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:90: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:114: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:121: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\PrimMST.java:129: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Queue.java:9: Line has trailing spaces. [RegexpSingleline]

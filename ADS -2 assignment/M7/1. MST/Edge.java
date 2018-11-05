@@ -1,83 +1,78 @@
-/**minimumdistance.**/
-class Edge implements Comparable<Edge> {
+/**
+ * Class for edge.
+ */
+public class Edge implements Comparable<Edge> {
     /**
-     * variable.
+     * {Vertex v}.
      */
     private final int v;
     /**
-     * variable.
+     * {Vertex w}.
      */
     private final int w;
     /**
-     * variable.
+     * {Weight}.
      */
     private final double weight;
+
     /**
-     * @brief [brief description]
-     * @details [long description]
+     * Initializes an edge between vertices
+     * {@code v} and {@code w} of
+     * the given {@code weight}.
      *
-     * @param v value
-     * @param w value
-     * @param weight value
-     * @return value
+     * @param  v1 one vertex
+     * @param  w1 the other vertex
+     * @param  weight1 the weight of this edge
      */
-    public Edge(final int v, final int w, final double weight) {
-        if (v < 0) {
-         throw new IllegalArgumentException(
-            "vertex index must be a nonnegative integer");
-     }
-        if (w < 0) {
-        throw new IllegalArgumentException(
-            "vertex index must be a nonnegative integer");
+    Edge(final int v1,
+        final int w1, final double weight1) {
+        this.v = v1;
+        this.w = w1;
+        this.weight = weight1;
     }
-        if (Double.isNaN(weight)) {
-         throw new IllegalArgumentException(
-            "Weight is NaN");
-     }
-        this.v = v;
-        this.w = w;
-        this.weight = weight;
-    }
+
     /**
-     * @brief [brief description]
-     * @details [long description]
-     * @return value
+     * Returns the weight of this edge.
+     *
+     * @return the weight of this edge
      */
     public double weight() {
-        return weight;
+        return this.weight;
     }
+
     /**
-     * @brief [brief description]
-     * @details [long description]
-     * @return value
+     * Returns either endpoint of this edge.
+     *
+     * @return either endpoint of this edge
      */
     public int either() {
-        return v;
+        return this.v;
     }
+
     /**
-     * @brief [brief description]
-     * @details [long description]
-     *
-     * @param vertex value
-     * @return value
+     * Returns the endpoint of this edge that is.
+     * different from the given vertex
+     * @param  vertex one endpoint of this edge
+     * @return the other endpoint of this edge
+     * @throws IllegalArgumentException if the vertex is not one of the
+     * endpoints of this edge
      */
     public int other(final int vertex) {
         if (vertex == v) {
-         return w;
-     }
-        else if (vertex == w) {
-         return v;
-     }
-        else {
-        throw new IllegalArgumentException("Illegal endpoint");
+            return w;
+        } else if (vertex == w) {
+            return v;
+        } else {
+            throw new IllegalArgumentException(
+                "Illegal endpoint");
+        }
     }
-    }
+
     /**
-     * @brief [brief description]
-     * @details [long description]
+     * Compares two edges by weight.
      *
-     * @param that value
-     * @return value
+     * @param  that the other edge
+     * @return a negative integer, zero, or positive integer.
      */
     @Override
     public int compareTo(final Edge that) {
