@@ -25,7 +25,7 @@ class Solution {
 				Double.parseDouble(inp[2]));
 			wtEdge.addEdge(e);
 		}
-		PrimMST p =  new PrimMST(wtEdge);
+		LazyPrimMST p =  new LazyPrimMST(wtEdge);
 		// System.out.println(p.edges());
 		System.out.format("%.5f",p.weight());
 	}
