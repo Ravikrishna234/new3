@@ -53,7 +53,7 @@ class PageRank {
         int temp = vertices;
         Digraph reverse = g.reverse();
        for(int i = 0; i < thousand; i++) {
-        for(int j =0;j < temp; j++) {
+        for(int j =0; j < temp; j++) {
             result = 0.0;
             for(int k : reverse.adj(j)) {
                 result += ((b[k])) / ((double) ((g.outdegree(k))));
@@ -76,7 +76,7 @@ class PageRank {
     public String toString() {
         String str = "";
         for (int i = 0; i < vertices; i++) {
-            str += i + " - " + a[i] + "\n";
+            str += i + " - " + b[i] + "\n";
         }
         return str;
 
