@@ -60,11 +60,11 @@ class PageRank {
             }
             b[j] = result;
         }
-        // if (Arrays.equals(a,b)) {
-        //     break;
-        // } else {
-        //     a = b.clone();
-        // }
+        if (Arrays.equals(a,b)) {
+            break;
+        } else {
+            a = b.clone();
+        }
        }
     }
     /**
