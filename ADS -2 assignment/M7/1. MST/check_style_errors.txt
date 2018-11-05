@@ -14,7 +14,6 @@ Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:20: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:22:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:39: Unused Javadoc tag. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:41:54: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:60:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
@@ -32,7 +31,7 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:133:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\EdgeWeightedGraph.java:133:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\IndexMinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\IndexMinPQ.java:3: Missing a Javadoc comment. [JavadocType]
@@ -306,37 +305,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:27: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:28: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:29: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:36: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:49:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:50:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:53: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:54:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:55:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:89:22: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:119: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:126: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:136: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:139: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:141: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:148: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:149:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:151:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:151:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:151:29: Parameter first should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:151:40: 'first' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:155:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:159:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:163:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:164: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:166: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\UF.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\UF.java:1: Missing a Javadoc comment. [JavadocType]

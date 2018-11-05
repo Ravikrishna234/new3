@@ -16,18 +16,18 @@ public class EdgeWeightedGraph {
      * @brief [brief description]
      * @details [long description]
      *
-     * @param V [description]
+     * @param vert [description]
      * @return [description]
      */
-    public EdgeWeightedGraph(final int V) {
-        if (V < 0) {
+    public EdgeWeightedGraph(final int vert) {
+        if (vert < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
         }
-        this.vertex = V;
+        this.vertex = vert;
         this.edge = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        adj = (Bag<Edge>[]) new Bag[vert];
+        for (int v = 0; v < vertex; v++) {
             adj[v] = new Bag<Edge>();
         }
     }
