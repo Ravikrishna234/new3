@@ -14,12 +14,12 @@ class Solution {
 	 * @param args [description]
 	 */
 	public static void main(final String[] args) {
-		Scanner in = new Scanner(System.in);
-		int vert = Integer.parseInt(in.nextLine());
-		int testcases = Integer.parseInt(in.nextLine());
+		Scanner s = new Scanner(System.in);
+		int vert = Integer.parseInt(s.nextLine());
+		int testcases = Integer.parseInt(s.nextLine());
 		EdgeWeightedGraph wtEdge = new EdgeWeightedGraph(vert);
 		for (int i = 0; i < testcases; i++) {
-			String[] inp = in.nextLine().split(" ");
+			String[] inp = s.nextLine().split(" ");
 			Edge e = new Edge(Integer.parseInt(inp[0]),
 				Integer.parseInt(inp[1]),
 				Double.parseDouble(inp[2]));
