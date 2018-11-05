@@ -270,8 +270,8 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Solution.java:4:44: Array brackets at illegal position. [ArrayTypeStyle]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Solution.java:11: Line is longer than 80 characters (found 125). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Solution.java:15:42: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Solution.java:11: Line is longer than 80 characters (found 122). [LineLength]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Solution.java:16:42: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 10 errors.
 Starting audit...
@@ -306,7 +306,6 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\Stack.java:166: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 29 errors.
-Files to process must be specified, found 0.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\UF.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M7\1. MST\UF.java:1: Missing a Javadoc comment. [JavadocType]
