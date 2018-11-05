@@ -1,18 +1,17 @@
 import java.util.Scanner;
+import java.util.Arrays;
 class Solution {
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		int n = Integer.parseInt(s.nextLine());
-		int n1 = Integer.parseInt(s.nextLine());
-		int j = 0;
-		EdgeWeightedGraph ed = new EdgeWeightedGraph(n);
-		while (j < n1) {
-			String[] tokens = s.nextLine().split(" ");
-			Edge e = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
-			ed.addEdge(e);
-			j++;
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		int vert = Integer.parseInt(in.nextLine());
+		int testcases = Integer.parseInt(in.nextLine());
+		EdgeWeightedGraph wtEdge = new EdgeWeightedGraph(vert);
+		for (int i = 0; i < testcases; i++) {
+			String[] inp = in.nextLine().split(" ");
+			wtEdge.addEdge(new Edge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]), Double.valueOf(inp[2])));
 		}
-		KruskalMST k = new KruskalMST(ed);
-		System.out.println(k.weight());
+		PrimMST p =  new PrimMST(wtEdge);
+		// System.out.println(p.edges());
+		System.out.format("%.5f",p.weight());
 	}
 }

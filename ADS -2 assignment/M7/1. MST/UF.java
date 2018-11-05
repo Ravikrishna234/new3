@@ -1,4 +1,4 @@
-public class UF {
+class UF {
 
     private int[] parent;  // parent[i] = parent of i
     private byte[] rank;   // rank[i] = rank of subtree rooted at i (never more than 31)
@@ -6,7 +6,7 @@ public class UF {
 
     /**
      * Initializes an empty union–find data structure with {@code n} sites
-     * {@code 0} through {@code n-1}. Each site is initially in its own
+     * {@code 0} through {@code n-1}. Each site is initially in its own 
      * component.
      *
      * @param  n the number of sites
@@ -47,7 +47,7 @@ public class UF {
     public int count() {
         return count;
     }
-
+  
     /**
      * Returns true if the the two sites are in the same component.
      *
@@ -61,9 +61,9 @@ public class UF {
     public boolean connected(int p, int q) {
         return find(p) == find(q);
     }
-
+  
     /**
-     * Merges the component containing site {@code p} with the
+     * Merges the component containing site {@code p} with the 
      * the component containing site {@code q}.
      *
      * @param  p the integer representing one site
@@ -90,7 +90,7 @@ public class UF {
     private void validate(int p) {
         int n = parent.length;
         if (p < 0 || p >= n) {
-            throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n-1));
+            throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n-1));  
         }
     }
 }
