@@ -52,19 +52,19 @@ class PageRank {
         }
         int temp = vertices;
         Digraph reverse = g.reverse();
-       for(int i = 0; i < thousand; i++) {
-        for(int j =0; j < temp; j++) {
+       for (int i = 0; i < thousand; i++) {
+        for (int j = 0; j < temp; j++) {
             result = 0.0;
-            for(int k : reverse.adj(j)) {
+            for (int k : reverse.adj(j)) {
                 result += ((b[k])) / ((double) ((g.outdegree(k))));
             }
             b[j] = result;
         }
-        if(Arrays.equals(a,b)) {
-            break;
-        } else {
-            b = a;
-        }
+        // if (Arrays.equals(a,b)) {
+        //     break;
+        // } else {
+        //     a = b.clone();
+        // }
        }
     }
     /**
