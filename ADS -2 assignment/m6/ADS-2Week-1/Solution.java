@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**PAGERANK.**/
 class PageRank {
     /**
@@ -13,6 +14,19 @@ class PageRank {
      * variable.
      */
     private int vertices;
+     /**
+     * variable.
+     */
+     private double[] b;
+      /**
+     * variable.
+     */
+      private final int thousand = 1000;
+       /**
+     * variable.
+     */
+       private double result;
+
     /**
      * @brief [brief description]
      * @details [long description]
@@ -22,6 +36,7 @@ class PageRank {
         this.graph = g;
         this.vertices = g.V();
         a = new double[this.vertices];
+        b = new double[this.vertices];
     }
     /**
      * @brief [brief description]
@@ -36,26 +51,21 @@ class PageRank {
             //System.out.println(a[i]);
         }
         int temp = vertices;
-        while (temp >= 0) {
-        for (int i = 0; i < vertices; i++) {
-            Queue q = g.connected(i);
-            int temp1 = q.size();
-            if (temp1 == 0) {
-                a[i] = 0;
+        Digraph reverse = g.reverse();
+       for(int i = 0; i < thousand; i++) {
+        for(int j =0;j < temp; j++) {
+            result = 0.0;
+            for(int k : reverse.adj(j)) {
+                result += ((b[k])) / ((double) ((g.outdegree(k))));
             }
-
-            double temp2 = 0;
-            while (temp1 > 0) {
-                 int c = (int) q.dequeue();
-
-        temp2 = a[c] / (double) g.outdegree(c);
-                temp1--;
-            }
-            a[i] = temp2;
-            }
-        temp--;
+            b[j] = result;
         }
-
+        if(Arrays.equals(a,b)) {
+            break;
+        } else {
+            b = a;
+        }
+       }
     }
     /**
      * @brief [brief description]
@@ -103,6 +113,15 @@ final class Solution {
             j++;
         }
         System.out.println(g);
+        for (int i = 0; i < g.V(); i++) {
+            if (g.outdegree(i) == 0) {
+                for (j = 0; j < g.V(); j++) {
+                    if (i != j) {
+                        g.addEdge(i,j);
+                    }
+                }
+            }
+        }
         PageRank p = new PageRank(g);
         p.computerank(g);
         System.out.println(p);
