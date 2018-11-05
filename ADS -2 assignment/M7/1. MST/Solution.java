@@ -1,14 +1,28 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**MINIMUMDISTANCE.**/
 class Solution {
-	public static void main(String args[]) {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	private Solution() { }
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(N)
+	 * @param args [description]
+	 */
+	public static void main(final String[] args) {
 		Scanner in = new Scanner(System.in);
 		int vert = Integer.parseInt(in.nextLine());
 		int testcases = Integer.parseInt(in.nextLine());
 		EdgeWeightedGraph wtEdge = new EdgeWeightedGraph(vert);
 		for (int i = 0; i < testcases; i++) {
 			String[] inp = in.nextLine().split(" ");
-			Edge e = new Edge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]), Double.parseDouble(inp[2]));
+			Edge e = new Edge(Integer.parseInt(inp[0]),
+				Integer.parseInt(inp[1]),
+				Double.parseDouble(inp[2]));
 			wtEdge.addEdge(e);
 		}
 		PrimMST p =  new PrimMST(wtEdge);
@@ -16,3 +30,4 @@ class Solution {
 		System.out.format("%.5f",p.weight());
 	}
 }
+
