@@ -5,16 +5,16 @@ public class SeamCarver {
 	int height;
 	Picture pic;
 	public SeamCarver(Picture picture) {
+		pic = picture;
 		if (pic == null) {
 			throw new IllegalArgumentException("Picture is null");
 		}
-		pic = picture;
 		width = pic.width();
 		height = pic.height();
 	}
 	// current picture
 	public Picture picture() {
-		return null;
+		return pic;
 	}
 	// width of current picture
 	public int width() {
