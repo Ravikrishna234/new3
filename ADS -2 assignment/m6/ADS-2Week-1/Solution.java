@@ -124,7 +124,7 @@ final class Solution {
             }
             j++;
         }
-        System.out.println(g);
+        System.out.println(g1);
         // for (int i = 0; i < g.V(); i++) {
         //     if (g.outdegree(i) == 0) {
         //         for (j = 0; j < g.V(); j++) {
