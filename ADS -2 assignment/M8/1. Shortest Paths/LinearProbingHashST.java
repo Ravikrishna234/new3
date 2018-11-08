@@ -55,6 +55,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * @return {@code true} if this symbol table is empty;
+     * Time complexity is O(1)
      * {@code false} otherwise
      */
     public boolean isEmpty() {
@@ -65,6 +66,7 @@ public class LinearProbingHashST<Key, Value> {
      * @param  key the key.
      * @return {@code true} if this symbol table contains {@code key};
      * {@code false} otherwise
+     * Time complexity is O(1)
      */
     public boolean contains(final Key key) {
         return get(key) != null;
@@ -76,7 +78,7 @@ public class LinearProbingHashST<Key, Value> {
      * returns value between 0 and M-1}.
      *
      * @param      key   The key
-     *
+     * Time complexity is O(1)
      * @return     {Integer}
      */
     private int hash(final Key key) {
@@ -86,7 +88,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * {resizes the hash table to the given capacity}.
-     *
+     * Time complexity is O(N)
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
@@ -111,6 +113,7 @@ public class LinearProbingHashST<Key, Value> {
      * if the specified value is {@code null}.
      * @param  key the key
      * @param  val the value
+     * Time complexity is O(log(N))
      */
     public void put(final Key key, final Value val) {
         if (val == null) {
@@ -139,6 +142,7 @@ public class LinearProbingHashST<Key, Value> {
      * @param key the key
      * @return the value associated with {@code key};
      * {@code null} if no such value
+     * Time complexity is O(log(N))
      */
     public Value get(final Key key) {
         for (int i = hash(key); keys[i] != null; i = (i + 1) % m) {
@@ -152,6 +156,7 @@ public class LinearProbingHashST<Key, Value> {
     /**
      * Removes the specified key and its.
      * associated value from symbol table
+     * Time complexity is O(log(N))
      * @param  key the key
      */
     public void delete(final Key key) {
@@ -188,6 +193,7 @@ public class LinearProbingHashST<Key, Value> {
     /**
      * Returns all keys in this symbol table as an {@code Iterable}.
      * @return all keys in this symbol table
+     * Time complexity is O(N)
      */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
