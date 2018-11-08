@@ -56,14 +56,14 @@ class PageRank {
         for (int j = 0; j < temp; j++) {
             result = 0.0;
             for (int k : reverse.adj(j)) {
-                result += ((a[k])) / ((double) ((g.outdegree(k))));
+                result += ((b[k])) / ((double) ((g.outdegree(k))));
             }
             b[j] = result;
         }
         if(Arrays.equals(a,b)) {
             break;
         } else {
-            b = a;
+            b = a.clone();
         }
        }
     }
