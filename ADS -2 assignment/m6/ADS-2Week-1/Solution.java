@@ -41,7 +41,7 @@ class PageRank {
     /**
      * @brief [brief description]
      * @details [long description]
-     * Time complexity is O(N ^ 2)
+     * Time complexity is O(N ^ 3)
      * @param g value
      */
     public void computerank(final Digraph g) {
@@ -97,6 +97,7 @@ final class Solution {
     /**
      * @brief [brief description]
      * @details [long description]
+     * Time complexity is O(N)
      * @param args value
      */
     public static void main(final String[] args) {
@@ -109,8 +110,8 @@ final class Solution {
             String[] tokens = s.nextLine().split(" ");
             if (tokens.length >= 2) {
                 for (int i = 1; i < tokens.length; i++) {
-                    //g.addEdge(Integer.parseInt(tokens[0]),
-                        //Integer.parseInt(tokens[i]));
+                    g.addEdge(Integer.parseInt(tokens[0]),
+                        Integer.parseInt(tokens[i]));
                     g1.addEdge(Integer.parseInt(tokens[0]),
                                Integer.parseInt(tokens[i]));
                 }
