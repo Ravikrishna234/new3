@@ -63,7 +63,7 @@ class PageRank {
         if(Arrays.equals(a,b)) {
             break;
         } else {
-            b = a.clone();
+            a = b.clone();
         }
        }
     }
