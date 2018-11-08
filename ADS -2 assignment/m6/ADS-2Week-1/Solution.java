@@ -107,6 +107,7 @@ final class Solution {
         Digraph g1 = new Digraph(n);
         while (j < n) {
             String[] tokens = s.nextLine().split(" ");
+            if(tokens.length >= 2) {
             for (int i = 1; i < tokens.length; i++) {
                 g.addEdge(Integer.parseInt(tokens[0]),
                     Integer.parseInt(tokens[i]));
@@ -114,7 +115,14 @@ final class Solution {
                     Integer.parseInt(tokens[i]));
             }
             j++;
-        }
+        }  else {
+                for (int k = 0; k < n; k++) {
+                    if (k != Integer.parseInt(tokens[0])) {
+                        g1.addEdge(Integer.parseInt(tokens[0]), k);
+                    }
+                }
+            }
+    }
         System.out.println(g);
         // for (int i = 0; i < g.V(); i++) {
         //     if (g.outdegree(i) == 0) {
