@@ -104,26 +104,29 @@ final class Solution {
         int n = Integer.parseInt(s.nextLine());
         int j = 0;
         Digraph g = new Digraph(n);
+        Digraph g1 = new Digraph(n);
         while (j < n) {
             String[] tokens = s.nextLine().split(" ");
             for (int i = 1; i < tokens.length; i++) {
                 g.addEdge(Integer.parseInt(tokens[0]),
                     Integer.parseInt(tokens[i]));
+                g1.addEdge(Integer.parseInt(tokens[0]),
+                    Integer.parseInt(tokens[i]));
             }
             j++;
         }
         System.out.println(g);
-        for (int i = 0; i < g.V(); i++) {
-            if (g.outdegree(i) == 0) {
-                for (j = 0; j < g.V(); j++) {
-                    if (i != j) {
-                        g.addEdge(i,j);
-                    }
-                }
-            }
-        }
-        PageRank p = new PageRank(g);
-        p.computerank(g);
+        // for (int i = 0; i < g.V(); i++) {
+        //     if (g.outdegree(i) == 0) {
+        //         for (j = 0; j < g.V(); j++) {
+        //             if (i != j) {
+        //                 g.addEdge(i,j);
+        //             }
+        //         }
+        //     }
+        // }
+        PageRank p = new PageRank(g1);
+        p.computerank(g1);
         System.out.println(p);
         // File path to the web content
         String file = "WebContent.txt";
