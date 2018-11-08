@@ -116,7 +116,7 @@ final class Solution {
                 }
             }  else {
                 for (int k = 0; k < n; k++) {
-                    if (k != Integer.parseInt(tokens[0])) {
+                    if (g.outdegree(k) == 0) {
                         g1.addEdge(Integer.parseInt(tokens[0]), k);
                     }
 
