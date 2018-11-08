@@ -1,6 +1,17 @@
 import java.util.Scanner;
-class Solution {
-	public static void main(String[] args) {
+final class Solution {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	private Solution() { }
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(N)
+	 * @param args [description]
+	 */
+	public static void main(final String[] args) {
 		Scanner s= new Scanner(System.in);
 		String[] tokens = s.nextLine().split(" ");
 		int n1 = Integer.parseInt(tokens[0]);
@@ -15,6 +26,7 @@ class Solution {
 		int j = 0;
 		while(j < n2) {
 			String[] routes = s.nextLine().split(" ");
+			//System.out.println(hashing.get(routes[0]) + "-" + hashing.get(routes[1]));
 			Edge e = new Edge(hashing.get(routes[0]), hashing.get(routes[1]),
 				Double.parseDouble(routes[2]));
 			ewg.addEdge(e);

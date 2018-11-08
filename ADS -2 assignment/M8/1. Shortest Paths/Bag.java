@@ -1,4 +1,5 @@
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 /**
  * Class for bag.
  *
@@ -6,11 +7,11 @@ import java.util.Iterator;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * {beginning of bag}.
+     * Begginning of the Bag.
      */
     private Node<Item> first;
-    /**
-     * {number of elements in bag}.
+    /**.
+     * // number of elements in bag.
      */
     private int n;
 
@@ -21,11 +22,11 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private static class Node<Item> {
         /**
-         * {Item}.
+         * Item of Node.
          */
         private Item item;
         /**
-         * {next of type node}.
+         * next of node.
          */
         private Node<Item> next;
     }
@@ -33,7 +34,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * Initializes an empty bag.
      */
-    Bag() {
+    public Bag() {
         first = null;
         n = 0;
     }
@@ -72,9 +73,9 @@ public class Bag<Item> implements Iterable<Item> {
 
 
     /**
+     * iterator.
      *
-     * @return an iterator that iterates over the items in
-     * this bag in arbitrary order
+     * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
@@ -87,18 +88,17 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class ListIterator<Item> implements Iterator<Item> {
         /**
-         * {Current Node}.
+         * current node.
          */
         private Node<Item> current;
         /**
          * Constructs the object.
          *
-         * @param      first1  The first
+         * @param      firs The first
          */
-        ListIterator(final Node<Item> first1) {
-            current = first1;
+        ListIterator(final Node<Item> firs) {
+            current = firs;
         }
-
         /**
          * Determines if it has next.
          *
@@ -108,18 +108,21 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * {Method to remove}.
+         * remove function.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
 
         /**
-         * {Method to find next}.
+         * next to iterate.
          *
-         * @return     {Item}
+         * @return      Item
          */
         public Item next() {
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;

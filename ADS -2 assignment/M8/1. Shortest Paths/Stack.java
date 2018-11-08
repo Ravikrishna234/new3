@@ -1,165 +1,164 @@
 import java.util.Iterator;
-
+import java.util.NoSuchElementException;
+/**hasacycle.**/
 /**
- * List of Stack.
- *
- * @param      <Item>  The item
+ * @param <Item> value
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
-     * {first item}.
+     * variable.
      */
-    private Node<Item> first;
+    private int num;
     /**
-     * {Size of the stack}.
+     * variable.
      */
-    private int n;
-
-    /**
-     * Class for node.
-     *
-     * @param      <Item>  The item
+    private Node first;
+    /**hasacycle.**/
+    private class Node {
+     /**
+     * variable.
      */
-    private static class Node<Item> {
-        /**
-         * {Item}.
-         */
         private Item item;
-        /**
-         * {next of type node}.
-         */
-        private Node<Item> next;
-    }
-
     /**
-     * Initializes an empty stack.
+     * variable.
      */
-    Stack() {
-        first = null;
-        n = 0;
+        private Node next;
     }
 
-    /**
-     * Returns true if this stack is empty.
-     *
-     * @return true if this stack is empty; false otherwise
+   /**
+     * Create an empty stack.
+     */
+    public Stack() {
+        first = null;
+        num = 0;
+    }
+
+   /**
+     * Is the stack empty?
+     * Time complexity is O(1)
+     * @return value
      */
     public boolean isEmpty() {
         return first == null;
     }
 
-    /**
-     * Returns the number of items in this stack.
-     *
-     * @return the number of items in this stack
+   /**
+     * Return the number of items in the stack.
+     * Time complexity is O(1)
+     * @return value
      */
     public int size() {
-        return n;
+        return num;
     }
 
-    /**
-     * Adds the item to this stack.
-     *
-     * @param  item the item to add
+   /**
+     * Add the item to the stack.
+     * Time complexity is O(1)
+     * @param item value
      */
     public void push(final Item item) {
-        Node<Item> oldfirst = first;
-        first = new Node<Item>();
+        Node oldfirst = first;
+        first = new Node();
         first.item = item;
         first.next = oldfirst;
-        n++;
+        num++;
     }
 
-    /**
-     * Removes and returns the item most recently added to this stack.
-     *
-     * @return the item most recently added
+   /**
+     * @return value
+     * Time complexity is O(1)
      */
     public Item pop() {
-        Item item = first.item;
-        first = first.next;
-        n--;
-        return item;
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
+        Item item = first.item;        // save item to return
+        first = first.next;            // delete first node
+        num--;
+        return item;                   // return the saved item
     }
 
 
-    /**
-     * Returns (but does not remove) the item most recently
-     * added to this stack.
-     *
-     * @return the item most recently added to this stack
+   /**
+     * @return value
+     * Time complexity is O(1)
      */
     public Item peek() {
+        if (isEmpty()) {
+    throw new RuntimeException("Stack underflow");
+    }
         return first.item;
     }
 
-    /**
-     * Returns a string representation of this stack.
-     *
-     * @return the sequence of items in this stack in LIFO order.
+   /**
+     * Return string representation.
+     * Time complexity is O(N)
+     * @return value
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
-            s.append(item);
-            s.append(' ');
+            s.append(item + " ");
         }
         return s.toString();
     }
 
 
-    /**
-     *
-     * @return an iterator to this stack that iterates
-     * through the items in LIFO order
+   /**
+     * @return value
+     * Time complexity is O(N)
      */
     public Iterator<Item> iterator() {
-        return new ListIterator<Item>(first);
+        return new ListIterator();
     }
 
-    /**
-     * Class for list iterator.
-     *
-     * @param      <Item>  The item
-     */
-    private class ListIterator<Item> implements Iterator<Item> {
-        /**
-         * {Current node}.
+    /**hasacycle.**/
+    private class ListIterator implements Iterator<Item> {
+        /**.
+         * variable.
          */
-        private Node<Item> current;
+        private Node current = first;
         /**
-         * Constructs the object.
-         *
-         * @param      first1  The first
-         */
-        ListIterator(final Node<Item> first1) {
-            current = first1;
-        }
-        /**
-         * Determines if it has next.
-         *
-         * @return     True if has next, False otherwise.
+         * @return value
+         * Time complexity is O(1)
          */
         public boolean hasNext() {
             return current != null;
-        }
-        /**
-         * {Remove method}.
-         */
+             }
+             /**
+              * @brief [brief description]
+              * @details [long description]
+              * Time complexity is O(1)
+              */
         public void remove() {
-            throw new UnsupportedOperationException();
-        }
-
-        /**
-         * {Next method}.
-         *
-         * @return     { description_of_the_return_value }
-         */
+        throw new UnsupportedOperationException();
+             }
+            /**
+             * @return value
+             * Time complexity is O(1)
+             */
         public Item next() {
+            if (!hasNext()) {
+             throw new NoSuchElementException();
+        }
             Item item = current.item;
             current = current.next;
             return item;
         }
     }
+
+
+   /**
+     * A test client.
+     */
+/*    public static void main(String[] args) {
+        Stack<String> s = new Stack<String>();
+        while (!StdIn.isEmpty()) {
+            String item = StdIn.readString();
+            if (!item.equals("-")) s.push(item);
+            else if (!s.isEmpty()) StdOut.print(s.pop() + " ");
+        }
+        StdOut.println("(" + s.size() + " left on stack)");
+    }*/
 }
 
