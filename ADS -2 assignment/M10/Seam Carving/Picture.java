@@ -291,6 +291,7 @@ public final class Picture implements ActionListener {
         validateColumnIndex(col);
         validateRowIndex(row);
         int rgb = getRGB(col, row);
+        //System.out.println(rgb + "---");
         return new Color(rgb);
     }
 

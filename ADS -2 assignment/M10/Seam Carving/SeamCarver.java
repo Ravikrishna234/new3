@@ -5,6 +5,9 @@ public class SeamCarver {
 	int height;
 	Picture pic;
 	public SeamCarver(Picture picture) {
+		if (pic == null) {
+			throw new IllegalArgumentException("Picture is null");
+		}
 		pic = picture;
 		width = pic.width();
 		height = pic.height();
@@ -28,10 +31,11 @@ public class SeamCarver {
 		if(x == 0 || x == width() - 1 || y == 0 || y == height() - 1) {
 			return 1000;
 		}
+		//System.out.println(calculatesquare(pic.get(x - 1,y), pic.get(x + 1, y)));
 		return Math.sqrt(calculatesquare(pic.get(x - 1,y), pic.get(x + 1, y))
 		+ calculatesquare(pic.get(x, y - 1), pic.get(x, y + 1)));
 	}
-	public double calculatesquare(Color one, Color two) {
+	private double calculatesquare(Color one, Color two) {
 		double r = one.getRed() - two.getRed();
 		double g = one.getGreen() - two.getGreen();
 		double b = one.getBlue() - two.getBlue();
