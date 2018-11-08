@@ -109,8 +109,8 @@ final class Solution {
             String[] tokens = s.nextLine().split(" ");
             if (tokens.length >= 2) {
                 for (int i = 1; i < tokens.length; i++) {
-                    g.addEdge(Integer.parseInt(tokens[0]),
-                        Integer.parseInt(tokens[i]));
+                    //g.addEdge(Integer.parseInt(tokens[0]),
+                        //Integer.parseInt(tokens[i]));
                     g1.addEdge(Integer.parseInt(tokens[0]),
                                Integer.parseInt(tokens[i]));
                 }
