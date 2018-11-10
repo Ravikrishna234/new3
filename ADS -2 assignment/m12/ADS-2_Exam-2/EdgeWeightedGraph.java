@@ -1,7 +1,7 @@
 /**
  * Class for edge weighted graph.
  */
-public class EdgeWeightedGraph {
+final class EdgeWeightedGraph {
     /**
      * {Vertices}.
      */
@@ -102,6 +102,11 @@ public class EdgeWeightedGraph {
         }
         return list;
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
+     */
      public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(vertices + " vertices " + edges + " edges" + "\n");
@@ -116,3 +121,4 @@ public class EdgeWeightedGraph {
     }
 
 }
+

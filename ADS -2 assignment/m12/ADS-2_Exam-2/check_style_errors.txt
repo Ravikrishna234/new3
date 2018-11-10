@@ -15,10 +15,9 @@ Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:105:6: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:105:6: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:24:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\Solution.java:2: Class Solution should be declared as final. [FinalClass]
