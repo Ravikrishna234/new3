@@ -61,6 +61,17 @@ public class Solution {
 				for(Edge e : du.pathTo(Integer.parseInt(path[1]))) {
 					str += e.either() + " ";
 					}
+					int i = 0;
+				for(Edge e1 : du1.pathTo(Integer.parseInt(path[2]))) {
+					int temp = e1.either();
+					if(i % 2 == 0) {
+						str += e1.other(temp) + " ";
+					} else {
+						str += temp + " ";
+					}
+					i++;
+				}
+				System.out.println(str);
 
 			     } else {
 				   System.out.println("No Path Found.");
@@ -68,7 +79,7 @@ public class Solution {
 		}else {
 				System.out.println("No Path OFound");
 			}
-			System.out.println(str);
+
 
 			break;
 
