@@ -54,8 +54,8 @@ public class Solution {
 			if(du.hasPathTo(Integer.parseInt(path[1]))) {
 				path1 = (int) du.distTo(Integer.parseInt((path[1])));
 				if(du1.hasPathTo(Integer.parseInt(path[2]))) {
-				 path2 = (int) du.distTo(Integer.parseInt((path[2])));
-				System.out.println(path1);
+				 path2 = (int) du1.distTo(Integer.parseInt((path[2])));
+				System.out.println(path1 + path2);
 			     } else {
 				   System.out.println("No Path Found.");
 			}
