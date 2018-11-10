@@ -47,12 +47,12 @@ Your Output:
 10:
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 No Path Found.
 
 Your Output: 
-No Path Found
+No Path Found.
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########

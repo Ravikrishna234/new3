@@ -35,7 +35,7 @@ public class Solution {
 				float path = (int) dk.distTo(Integer.parseInt((places[1])));
 				System.out.println(path);
 			} else {
-				System.out.println("No Path Found");
+				System.out.println("No Path Found.");
 			}
 
 			break;
