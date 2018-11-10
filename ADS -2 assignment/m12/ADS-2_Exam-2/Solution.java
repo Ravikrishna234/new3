@@ -1,8 +1,18 @@
 import java.util.Scanner;
 public class Solution {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	private Solution() { }
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(N)
+	 * @param args value
+	 */
 
-
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
@@ -12,13 +22,15 @@ public class Solution {
 		EdgeWeightedGraph ewg = new EdgeWeightedGraph(n);
 		while(n1 > 0) {
 			String[] tokens = s.nextLine().split(" ");
-			Edge e = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
+			Edge e = new Edge(Integer.parseInt(tokens[0]),
+				Integer.parseInt(tokens[1]),
+				Double.parseDouble(tokens[2]));
 			ewg.addEdge(e);
 			n1--;
 
 		}
 
-		String caseToGo =s.nextLine();;
+		String caseToGo = s.nextLine();;
 		switch (caseToGo) {
 		case "Graph":
 			System.out.println(ewg);
