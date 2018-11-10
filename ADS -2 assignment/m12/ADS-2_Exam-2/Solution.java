@@ -9,7 +9,7 @@ public class Solution {
 		Scanner s = new Scanner(System.in);
 		int n = Integer.parseInt(s.nextLine());
 		int n1 = Integer.parseInt(s.nextLine());
-		EdgeWeightedGraph ewg = new EdgeWeightedGraph(n1);
+		EdgeWeightedGraph ewg = new EdgeWeightedGraph(n);
 		while(n1 > 0) {
 			String[] tokens = s.nextLine().split(" ");
 			Edge e = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
