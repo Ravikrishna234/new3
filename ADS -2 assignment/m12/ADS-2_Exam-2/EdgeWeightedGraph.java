@@ -21,7 +21,7 @@ final class EdgeWeightedGraph {
      * @param  v the number of vertices
      * @throws IllegalArgumentException if {@code v < 0}
      */
-    public EdgeWeightedGraph(final int v) {
+    EdgeWeightedGraph(final int v) {
         this.vertices = v;
         this.edges = 0;
         adj = (Bag<Edge>[]) new Bag[v];

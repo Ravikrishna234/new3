@@ -14,10 +14,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:24:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\Solution.java:2: Class Solution should be declared as final. [FinalClass]
