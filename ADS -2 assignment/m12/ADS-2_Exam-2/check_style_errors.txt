@@ -53,4 +53,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 30 errors.
 Starting audit...
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m12\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.
