@@ -48,20 +48,27 @@ public class Solution {
 			// Other wise print "No Path Found."
 			float path1 = 0;
 			float path2 = 0;
+			String str = " ";
 			String[] path = s.nextLine().split(" ");
 			DijkstraUndirectedSP du = new DijkstraUndirectedSP(ewg, Integer.parseInt(path[0]));
 			DijkstraUndirectedSP du1 = new DijkstraUndirectedSP(ewg, Integer.parseInt(path[1]));
 			if(du.hasPathTo(Integer.parseInt(path[1]))) {
 				path1 = (int) du.distTo(Integer.parseInt((path[1])));
+				str += path[0] + " ";
 				if(du1.hasPathTo(Integer.parseInt(path[2]))) {
 				 path2 = (int) du1.distTo(Integer.parseInt((path[2])));
 				System.out.println(path1 + path2);
+				for(Edge e : du.pathTo(Integer.parseInt(path[1]))) {
+					str += e.either() + " ";
+					}
+
 			     } else {
 				   System.out.println("No Path Found.");
 			}
 		}else {
 				System.out.println("No Path OFound");
 			}
+			System.out.println(str);
 
 			break;
 
