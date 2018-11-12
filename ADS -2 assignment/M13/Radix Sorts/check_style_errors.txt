@@ -33,9 +33,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 31 errors.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M13\Radix Sorts\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M13\Radix Sorts\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M13\Radix Sorts\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M13\Radix Sorts\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M13\Radix Sorts\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\M13\Radix Sorts\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
