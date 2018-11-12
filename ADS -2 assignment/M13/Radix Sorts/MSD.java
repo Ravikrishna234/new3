@@ -21,7 +21,8 @@ public class MSD {
 
    /**
      * Rearranges the array of extended ASCII strings in ascending order.
-     *
+     * Time complexity is O(wn)
+     * w is wordlength and n is no of strings
      * @param a the array to be sorted
      */
     public static void sort(final String[] a) {
@@ -34,7 +35,7 @@ public class MSD {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(1)
      * @param s value
      * @param d value
      *
@@ -55,6 +56,8 @@ public class MSD {
      * @param hi value
      * @param d value
      * @param aux value
+     *  Time complexity is O(wn)
+     * w is wordlength and n is no of strings
      */
     private static void sort(final String[] a, final int lo,
         final int hi, final int d, final String[] aux) {
@@ -102,6 +105,7 @@ public class MSD {
      * @param lo value
      * @param hi value
      * @param d value
+     * Time complexity is O(N^2)
      */
     private static void insertion(final String[] a, final int lo,
     final int hi, final int d) {
@@ -118,6 +122,7 @@ public class MSD {
      * @param a value
      * @param i value
      * @param j value
+     * Time complexity is O(1)
      */
     private static void exch(final String[] a,
         final int i, final int j) {
@@ -130,7 +135,7 @@ public class MSD {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(len of minimum string)
      * @param v value
      * @param w value
      * @param d value
@@ -152,7 +157,7 @@ public class MSD {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     *  Time complexity is O(N)
      * @param a value
      * @return value
      */
