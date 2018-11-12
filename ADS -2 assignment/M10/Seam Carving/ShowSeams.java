@@ -10,7 +10,7 @@ public final class ShowSeams {
     }
     /**
      * Shows the horizontal seam.
-     *
+     * Time complexity is O(1)
      * @param      sc    The screen
      */
     private static void showHorizontalSeam(final SeamCarver sc) {
@@ -24,7 +24,7 @@ public final class ShowSeams {
 
     /**
      * Shows the vertical seam.
-     *
+     * Time complexity is O(1)
      * @param      sc    The screen
      */
     private static void showVerticalSeam(final SeamCarver sc) {

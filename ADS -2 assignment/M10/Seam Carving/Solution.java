@@ -14,7 +14,7 @@ public final class Solution {
     }
     /**
      * {Method to print energies}.
-     *
+     * Time complexity is height * width
      * @param      fileName  The file name
      */
     public static void printEnergies(final String fileName) {
@@ -36,7 +36,7 @@ public final class Solution {
 
     /**
      * {Method to print the seams}.
-     *
+     *  Time complexity is height * width
      * @param      carver     The carver
      * @param      seam       The seam
      * @param      direction  The direction
@@ -67,7 +67,7 @@ public final class Solution {
 
     /**
      * {Client Program}.
-     *
+     *  Time complexity is O(N)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {

@@ -27,7 +27,7 @@ public class SeamCarver {
 
     /**
      * {current picture}.
-     *
+     * Time complexity is O(1)
      * @return     {Picture}
      */
     public Picture picture() {
@@ -36,7 +36,7 @@ public class SeamCarver {
 
     /**
      * {width of current picture}.
-     *
+     * Time complexity is O(1)
      * @return     {Integer}
      */
     public int width() {
@@ -45,7 +45,7 @@ public class SeamCarver {
 
     /**
      * {height of current picture}.
-     *
+     * Time complexity is O(1)
      * @return     {Integer}
      */
     public int height() {
@@ -55,7 +55,7 @@ public class SeamCarver {
 
     /**
      * {energy of pixel at column x and row y}.
-     *
+     * Time complexity is O(1)
      * @param      x     {Column}
      * @param      y     {Row}
      *
@@ -76,7 +76,7 @@ public class SeamCarver {
 
     /**
      * {energy of pixel at column x and row y not on border}.
-     *
+     * Time complexity is O(1)
      * @param      x     {Column}
      * @param      y     {Row}
      *
@@ -92,7 +92,7 @@ public class SeamCarver {
 
     /**
      * {Method to find the gradient}.
-     *
+     * Time complexity is O(1)
      * @param      one   One
      * @param      two   Two
      *
@@ -107,7 +107,7 @@ public class SeamCarver {
 
     /**
      * Gets the energy matrix.
-     *
+     * Time complexity is height * width
      * @return     The energy matrix.
      */
     private double[][] getEnergyMatrix() {
@@ -124,7 +124,7 @@ public class SeamCarver {
     /**
      * {pass through an array and mark the.
      * shorthest distance from top to entry}
-     *
+     * Time complexity is height * width
      * @param      array  The array
      */
     private void topologicalSort(final double[][] array) {
@@ -152,7 +152,7 @@ public class SeamCarver {
     }
     /**
      * {Method to transpose the grid}.
-     *
+     * Time complexity is height * width
      * @param      array  The array
      *
      * @return     {2-D Double Array}
@@ -203,7 +203,7 @@ public class SeamCarver {
 
     /**
      * {sequence of indices for horizontal seam}.
-     *
+     * Time complexity is O(1)
      * @return     {1-D Integer array}
      */
     public int[] findHorizontalSeam() {
@@ -213,7 +213,7 @@ public class SeamCarver {
 
     /**
      * {sequence of indices for vertical seam}.
-     *
+     * Time complexity is O(1)
      * @return     {1-D Integer array}
      */
     public int[] findVerticalSeam() {
@@ -223,7 +223,7 @@ public class SeamCarver {
 
     /**
      * Removes a horizontal seam.
-     *
+     * Time complexity is O(N ^ 2)
      * @param      seam  The seam
      */
     public void removeHorizontalSeam(final int[] seam) {
@@ -247,7 +247,7 @@ public class SeamCarver {
 
     /**
      * Removes a vertical seam.
-     *
+     * Time complexity is O(N ^ 2)
      * @param      seam  The seam
      */
     public void removeVerticalSeam(final int[] seam) {
@@ -273,7 +273,7 @@ public class SeamCarver {
      * @param      a      {Integer array}
      * @param      len    The length
      * @param      range  The range
-     *
+     * Time complexity is O(1)
      * @return     True if valid, False otherwise.
      */
     private boolean isValid(final int[] a,

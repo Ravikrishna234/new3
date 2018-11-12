@@ -16,7 +16,7 @@ public final class SCUtility {
      *
      * @param      width   The width
      * @param      height  The height
-     *
+     * Time complexity is height * width
      * @return     {Picture}
      */
     public static Picture randomPicture(final int width, final int height) {
@@ -39,7 +39,7 @@ public final class SCUtility {
      * {Method to convert to energy matrix}.
      *
      * @param      sc    The seam carver object
-     *
+     * Time complexity is height * width
      * @return     {2-D Double array}
      */
     public static double[][] toEnergyMatrix(final SeamCarver sc) {
@@ -56,7 +56,7 @@ public final class SCUtility {
 
     /**
      * Shows the energy.
-     *
+     * Time complexity is O(1)
      * @param      sc    The seam carver object
      */
     public static void showEnergy(final SeamCarver sc) {
@@ -65,7 +65,7 @@ public final class SCUtility {
 
     /**
      * {Method to convert to energy picture}.
-     *
+     * Time complexity is O(1)
      * @param      sc    The seam carver
      *
      * @return     {Picture}
@@ -78,7 +78,7 @@ public final class SCUtility {
     /**
      * {converts a double matrix of.
      * values into a normalized picture}.
-     *
+     * Time complexity is O(1)
      * @param      grayValues  The gray values
      *
      * @return     {Picture}
@@ -128,7 +128,7 @@ public final class SCUtility {
      * @param      picture      The picture
      * @param      horizontal   The horizontal
      * @param      seamIndices  The seam indices
-     *
+     * Time complexity is O(1)
      * @return     {Picture}
      */
     public static Picture seamOverlay(
