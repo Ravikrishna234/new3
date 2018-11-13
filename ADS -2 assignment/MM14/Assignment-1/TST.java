@@ -17,6 +17,7 @@ public class TST<Value> {
     /**
      * Returns the number of key-value pairs in this symbol table.
      * @return the number of key-value pairs in this symbol table
+     * Time complexity is O(1)
      */
     public int size() {
         return n;
@@ -28,6 +29,7 @@ public class TST<Value> {
      * @return {@code true} if this symbol table contains {@code key} and
      *     {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
+     * Time complexity is O(1)
      */
     public boolean contains(String key) {
         if (key == null) {
@@ -42,6 +44,7 @@ public class TST<Value> {
      * @return the value associated with the given key if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
+     * Time complexity is O(length of String)
      */
     public Value get(String key) {
         if (key == null) {
@@ -54,6 +57,15 @@ public class TST<Value> {
     }
 
     // return subtrie corresponding to given key
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(length of String)
+     * @param x value
+     * @param key value
+     * @param d value
+     * @return value
+     */
     private Node<Value> get(Node<Value> x, String key, int d) {
         if (x == null) return null;
         if (key.length() == 0) throw new IllegalArgumentException("key must have length >= 1");
@@ -71,6 +83,7 @@ public class TST<Value> {
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
+     * Time complexity is O(length of string)
      */
     public void put(String key, Value val) {
         if (key == null) {
@@ -79,7 +92,16 @@ public class TST<Value> {
         if (!contains(key)) n++;
         root = put(root, key, val, 0);
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(length of String)
+     * @param x value
+     * @param key value
+     * @param val value
+     * @param d value
+     * @return value
+     */
     private Node<Value> put(Node<Value> x, String key, Value val, int d) {
         char c = key.charAt(d);
         if (x == null) {
@@ -100,6 +122,7 @@ public class TST<Value> {
      * @return the string in the symbol table that is the longest prefix of {@code query},
      *     or {@code null} if no such string
      * @throws IllegalArgumentException if {@code query} is {@code null}
+     * Time complexity is O(length of string)
      */
     public String longestPrefixOf(String query) {
         if (query == null) {
@@ -127,6 +150,7 @@ public class TST<Value> {
      * To iterate over all of the keys in the symbol table named {@code st},
      * use the foreach notation: {@code for (Key key : st.keys())}.
      * @return all keys in the symbol table as an {@code Iterable}
+     * Time complexity is O(N)
      */
     public Iterable<String> keys() {
         Queue<String> queue = new Queue<String>();
@@ -140,6 +164,7 @@ public class TST<Value> {
      * @return all of the keys in the set that start with {@code prefix},
      *     as an iterable
      * @throws IllegalArgumentException if {@code prefix} is {@code null}
+     * Time complexity is O(N)
      */
     public Iterable<String> keysWithPrefix(String prefix) {
         if (prefix == null) {
@@ -154,6 +179,12 @@ public class TST<Value> {
     }
 
     // all keys in subtrie rooted at x with given prefix
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N)
+     * @param queue value
+     */
     private void collect(Node<Value> x, StringBuilder prefix, Queue<String> queue) {
         if (x == null) return;
         collect(x.left,  prefix, queue);
@@ -170,13 +201,19 @@ public class TST<Value> {
      * @param pattern the pattern
      * @return all of the keys in the symbol table that match {@code pattern},
      *     as an iterable, where . is treated as a wildcard character.
+     * Time complexity is O(N)
      */
     public Iterable<String> keysThatMatch(String pattern) {
         Queue<String> queue = new Queue<String>();
         collect(root, new StringBuilder(), 0, pattern, queue);
         return queue;
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N)
+     * @param queue value
+     */
     private void collect(Node<Value> x, StringBuilder prefix, int i, String pattern, Queue<String> queue) {
         if (x == null) return;
         char c = pattern.charAt(i);

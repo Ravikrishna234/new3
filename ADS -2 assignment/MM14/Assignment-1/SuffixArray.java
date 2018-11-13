@@ -5,13 +5,17 @@ public class SuffixArray {
     /**
      * Initializes a suffix array for the given {@code text} string.
      * @param text the input string
+     * Time complexity is O(N)
      */
-    public SuffixArray(String text) {
+    public SuffixArray(String text, TST ts) {
         int n = text.length();
         this.suffixes = new Suffix[n];
         for (int i = 0; i < n; i++)
             suffixes[i] = new Suffix(text, i);
         Arrays.sort(suffixes);
+        for(int i = 0; i < text.length(); i++) {
+            ts.put(select(i),i);
+        }
     }
 
     private static class Suffix implements Comparable<Suffix> {
@@ -22,13 +26,32 @@ public class SuffixArray {
             this.text = text;
             this.index = index;
         }
+        /**
+         * @brief [brief description]
+         * @details [long description]
+         * Time complexity is O(1)
+         * @return value
+         */
         private int length() {
             return text.length() - index;
         }
+        /**
+         * @brief [brief description]
+         * @details [long description]
+         * Time complexity is O(1)
+         * @param i value
+         * @return value
+         */
         private char charAt(int i) {
             return text.charAt(index + i);
         }
-
+        /**
+         * @brief [brief description]
+         * @details [long description]
+         * Time complexity is O()
+         * @param that value
+         * @return value
+         */
         public int compareTo(Suffix that) {
             if (this == that) return 0;  // optimization
             int n = Math.min(this.length(), that.length());
@@ -38,7 +61,12 @@ public class SuffixArray {
             }
             return this.length() - that.length();
         }
-
+        /**
+         * @brief [brief description]
+         * @details [long description]
+         * Time complexity is O(1)
+         * @return value
+         */
         public String toString() {
             return text.substring(index);
         }
@@ -47,6 +75,7 @@ public class SuffixArray {
     /**
      * Returns the length of the input string.
      * @return the length of the input string
+     * Time complexity is O(1)
      */
     public int length() {
         return suffixes.length;
@@ -59,6 +88,7 @@ public class SuffixArray {
      * @param i an integer between 0 and <em>n</em>-1
      * @return the index into the original string of the <em>i</em>th smallest suffix
      * @throws java.lang.IllegalArgumentException unless {@code 0 <= i < n}
+     * Time complexity is O(1)
      */
     public int index(int i) {
         if (i < 0 || i >= suffixes.length) throw new IllegalArgumentException();
@@ -73,6 +103,7 @@ public class SuffixArray {
      * @return the length of the longest common prefix of the <em>i</em>th
      * smallest suffix and the <em>i</em>-1st smallest suffix.
      * @throws java.lang.IllegalArgumentException unless {@code 1 <= i < n}
+     * Time complexity is O(N)
      */
     public int lcp(int i) {
         if (i < 1 || i >= suffixes.length) throw new IllegalArgumentException();
@@ -80,6 +111,15 @@ public class SuffixArray {
     }
 
     // longest common prefix of s and t
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N)
+     * @param s value
+     * @param t value
+     *
+     * @return value
+     */
     private static int lcpSuffix(Suffix s, Suffix t) {
         int n = Math.min(s.length(), t.length());
         for (int i = 0; i < n; i++) {
@@ -93,6 +133,7 @@ public class SuffixArray {
      * @param i the index
      * @return the <em>i</em> smallest suffix as a string
      * @throws java.lang.IllegalArgumentException unless {@code 0 <= i < n}
+     * Time complexity is O(1)
      */
     public String select(int i) {
         if (i < 0 || i >= suffixes.length) throw new IllegalArgumentException();
@@ -105,6 +146,7 @@ public class SuffixArray {
      * between 0 and <em>n</em>-1.
      * @param query the query string
      * @return the number of suffixes strictly less than {@code query}
+     * Time complexity is O(n)
      */
     public int rank(String query) {
         int lo = 0, hi = suffixes.length - 1;
