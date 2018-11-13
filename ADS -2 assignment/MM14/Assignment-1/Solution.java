@@ -7,12 +7,16 @@ public class Solution {
 		String[] words = loadWords();
 
 		TST<Integer> ts = new TST<Integer>();
-		for (int i = 0; i < words.length; i++) {
-			ts.put(words[i],i);
+		for(String str : words) {
+		SuffixArray sf = new SuffixArray(str);
+		for (int i = 0; i < str.length(); i++) {
+
+			ts.put(sf.select(i), i);
 		}
+	}
 		String s1 = s.nextLine();
 		//String[] tokens = ts.keysWithPrefix(s1).split(" ");
-		for(String st : ts.keysWithPrefix(s1)) {
+		for (String st : ts.keysWithPrefix(s1)) {
 			System.out.println(st);
 		}
 
