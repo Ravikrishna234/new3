@@ -8,7 +8,7 @@ public class BoggleSolver {
 
     // Initializes the data structure using the given array of strings as the dictionary.
     // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-    public BoggleSolver(String[] dictionary) {
+    public BoggleSolver(final String[] dictionary) {
         this.dictionary = new TrieSET();
         for (String s : dictionary) {
             this.dictionary.add(s);
@@ -20,8 +20,9 @@ public class BoggleSolver {
      * @brief [brief description]
      * @details [long description]
      * Time complexity is O(N ^ 2)
-     * @param board [description]
+     * @param board value
      * @return value
+     * Time complexity is O(rows * cols)
      */
     public Iterable<String> getAllValidWords(final BoggleBoard board) {
         Set<String> validWords = new HashSet<String>();
@@ -35,8 +36,21 @@ public class BoggleSolver {
 
         return validWords;
     }
-
-    private void collect(BoggleBoard board, int row, int col, boolean[][] marked, String prefix, Set<String> set) {
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *
+     * @param board value
+     * @param row value
+     * @param col value
+     * @param marked value
+     * @param prefix value
+     * @param set value
+     * Time complexity is O(9)
+     */
+    private void collect(final BoggleBoard board, final int row,
+        final int col, final boolean[][] marked,
+    final String prefix, final Set<String> set) {
         if (marked[row][col]) {
             return;
         }
@@ -77,6 +91,13 @@ public class BoggleSolver {
 
     // Returns the score of the given word if it is in the dictionary, zero otherwise.
     // (You can assume the word contains only the uppercase letters A through Z.)
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(1)
+     * @param word value
+     * @return value
+     */
     public int scoreOf(String word) {
         if (dictionary.contains(word)) {
             switch (word.length()) {

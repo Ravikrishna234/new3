@@ -28,7 +28,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns true if this queue is empty.
-     *
+     * Time complexity is O(1)
      * @return {@code true} if this queue is empty; {@code false} otherwise
      */
     public boolean isEmpty() {
@@ -37,7 +37,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns the number of items in this queue.
-     *
+     * Time complexity is O(1)
      * @return the number of items in this queue
      */
     public int size() {
@@ -46,7 +46,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns the item least recently added to this queue.
-     *
+     * Time complexity is O(1)
      * @return the item least recently added to this queue
      * @throws NoSuchElementException if this queue is empty
      */
@@ -57,7 +57,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Adds the item to this queue.
-     *
+     * Time complexity is O(1)
      * @param  item the item to add
      */
     public void enqueue(Item item) {
@@ -72,7 +72,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Removes and returns the item on this queue that was least recently added.
-     *
+     * Time complexity is O(1)
      * @return the item on this queue that was least recently added
      * @throws NoSuchElementException if this queue is empty
      */
@@ -89,7 +89,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns a string representation of this queue.
-     *
+     * Time complexity is O(N)
      * @return the sequence of items in FIFO order, separated by spaces
      */
     public String toString() {
@@ -103,7 +103,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns an iterator that iterates over the items in this queue in FIFO order.
-     *
+     * Time complexity is O(N)
      * @return an iterator that iterates over the items in this queue in FIFO order
      */
     public Iterator<Item> iterator()  {
@@ -117,10 +117,20 @@ public class Queue<Item> implements Iterable<Item> {
         public ListIterator(Node<Item> first) {
             current = first;
         }
-
+        /**
+         * @brief [brief description]
+         * @details [long description]
+         * @return value
+         * Time complexity is O(1)
+         */
         public boolean hasNext()  { return current != null;                     }
+        /**
+         *  Time Complexity is O(1)
+        **/
         public void remove()      { throw new UnsupportedOperationException();  }
-
+          /**
+         *  Time Complexity is O(N)
+        **/
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;

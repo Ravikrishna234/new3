@@ -22,38 +22,49 @@ class TrieSET {
      * @return <tt>true</tt> if the set contains <tt>key</tt> and
      *     <tt>false</tt> otherwise
      * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * Time complexity is O(1)
      */
-    public boolean contains(String key) {
+    public boolean contains(final String key) {
         Node x = get(root, key, 0);
         if (x == null) return false;
         return x.isString;
     }
-
-    private Node get(Node x, String key, int d) {
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(1)
+     * @param x [description]
+     * @param key [description]
+     * @param d [description]
+     * @return [description]
+     */
+    private Node get(final Node x, final String key, final int d) {
         if (x == null) return null;
         if (d == key.length()) return x;
         char c = Character.toUpperCase(key.charAt(d));
-        return get(x.next[c - 'A'], key, d+1);
+        return get(x.next[c - 'A'], key, d + 1);
     }
 
     /**
      * Adds the key to the set if it is not already present.
      * @param key the key to add
      * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * Time complexity is O(N)
      */
-    public void add(String key) {
+    public void add(final String key) {
         root = add(root, key, 0);
     }
-
-    private Node add(Node x, String key, int d) {
+    /**
+    * Time complexity is O(1)
+    **/
+    private Node add(Node x, final String key, final int d) {
         if (x == null) x = new Node();
         if (d == key.length()) {
             if (!x.isString) N++;
             x.isString = true;
-        }
-        else {
+        } else {
             char c = Character.toUpperCase(key.charAt(d));
-            x.next[c - 'A'] = add(x.next[c - 'A'], key, d+1);
+            x.next[c - 'A'] = add(x.next[c - 'A'], key, d + 1);
         }
         return x;
     }
@@ -61,6 +72,7 @@ class TrieSET {
     /**
      * Returns the number of strings in the set.
      * @return the number of strings in the set
+     * Time complexity is O(1)
      */
     public int size() {
         return N;
@@ -69,6 +81,7 @@ class TrieSET {
     /**
      * Is the set empty?
      * @return <tt>true</tt> if the set is empty, and <tt>false</tt> otherwise
+     * Time complexity is O(1)
      */
     public boolean isEmpty() {
         return size() == 0;
@@ -79,6 +92,7 @@ class TrieSET {
      * To iterate over all of the keys in a set named <tt>set</tt>, use the
      * foreach notation: <tt>for (Key key : set)</tt>.
      * @return an iterator to all of the keys in the set
+     * Time complexity is O(1)
      */
     public Iterable<String> keys() {
         return keysWithPrefix("");
@@ -89,15 +103,18 @@ class TrieSET {
      * @param prefix the prefix
      * @return all of the keys in the set that start with <tt>prefix</tt>,
      *     as an iterable
+     *     Time complexity is O(N)
      */
-    public Iterable<String> keysWithPrefix(String prefix) {
+    public Iterable<String> keysWithPrefix(final String prefix) {
         Queue<String> results = new Queue<String>();
         Node x = get(root, prefix, 0);
         collect(x, new StringBuilder(prefix), results);
         return results;
     }
-
-    private void collect(Node x, StringBuilder prefix, Queue<String> results) {
+    /**
+    * Time Complexity is O(N)
+    **/
+    private void collect(final Node x, final StringBuilder prefix, final Queue<String> results) {
         if (x == null) return;
         if (x.isString) results.enqueue(prefix.toString());
         for (char c = 'A'; c < 'A' + R; c++) {
@@ -113,15 +130,19 @@ class TrieSET {
      * @param pattern the pattern
      * @return all of the keys in the set that match <tt>pattern</tt>,
      *     as an iterable, where . is treated as a wildcard character.
+     *     Time complexity is O(N)
      */
-    public Iterable<String> keysThatMatch(String pattern) {
+    public Iterable<String> keysThatMatch(final String pattern) {
         Queue<String> results = new Queue<String>();
         StringBuilder prefix = new StringBuilder();
         collect(root, prefix, pattern, results);
         return results;
     }
-
-    private void collect(Node x, StringBuilder prefix, String pattern, Queue<String> results) {
+    /**
+    * Time complexity is O(1)
+    **/
+    private void collect(final Node x, final StringBuilder prefix,
+                         final String pattern, final Queue<String> results) {
         if (x == null) return;
         int d = prefix.length();
         if (d == pattern.length() && x.isString)
@@ -135,8 +156,7 @@ class TrieSET {
                 collect(x.next[ch - 'A'], prefix, pattern, results);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
-        }
-        else {
+        } else {
             prefix.append(c);
             collect(x.next[c - 'A'], prefix, pattern, results);
             prefix.deleteCharAt(prefix.length() - 1);
@@ -150,6 +170,7 @@ class TrieSET {
      * @throws NullPointerException if <tt>query</tt> is <tt>null</tt>
      * @return the string in the set that is the longest prefix of <tt>query</tt>,
      *     or <tt>null</tt> if no such string
+     *     Time complexity is O(1)
      */
     public String longestPrefixOf(String query) {
         int length = longestPrefixOf(root, query, 0, -1);
@@ -161,32 +182,37 @@ class TrieSET {
     // rooted at x that is a prefix of the query string,
     // assuming the first d character match and we have already
     // found a prefix match of length length
+    /**
+     * Time Complexity is O(N)
+    **/
     private int longestPrefixOf(Node x, String query, int d, int length) {
         if (x == null) return length;
         if (x.isString) length = d;
         if (d == query.length()) return length;
         char c = Character.toUpperCase(query.charAt(d));
-        return longestPrefixOf(x.next[c - 'A'], query, d+1, length);
+        return longestPrefixOf(x.next[c - 'A'], query, d + 1, length);
     }
 
     /**
      * Removes the key from the set if the key is present.
      * @param key the key
      * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * Time complexity is O(N)
      */
     public void delete(String key) {
         root = delete(root, key, 0);
     }
-
+    /**
+    * Time complexity is O(N)
+    **/
     private Node delete(Node x, String key, int d) {
         if (x == null) return null;
         if (d == key.length()) {
             if (x.isString) N--;
             x.isString = false;
-        }
-        else {
+        } else {
             char c = key.charAt(d);
-            x.next[c - 'A'] = delete(x.next[c - 'A'], key, d+1);
+            x.next[c - 'A'] = delete(x.next[c - 'A'], key, d + 1);
         }
 
         // remove subtrie rooted at x if it is completely empty
@@ -196,8 +222,10 @@ class TrieSET {
                 return x;
         return null;
     }
-
-    public boolean hasPrefix(String query) {
+    /**
+     *  Time complexity is O(1)
+    **/
+    public boolean hasPrefix(final String query) {
         Node x = get(root, query, 0);
         return x != null;
     }
