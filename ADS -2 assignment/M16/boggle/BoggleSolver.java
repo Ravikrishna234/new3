@@ -13,6 +13,10 @@ public class BoggleSolver {
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
+		if(board == null) {
+			throw new IllegalArgumentException("Board is null");
+
+		}
 		Set<String> valid = new HashSet<String>();
 		boolean[][] marked;
 		for (int i = 0; i < board.rows(); i++) {
