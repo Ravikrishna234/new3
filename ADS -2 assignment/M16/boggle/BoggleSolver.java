@@ -1,5 +1,9 @@
 import java.util.*;
+/**boggle.**/
 public class BoggleSolver {
+    /**.
+     * variable.
+     */
     private TrieSET dictionary;
 
     // Initializes the data structure using the given array of strings as the dictionary.
@@ -12,7 +16,14 @@ public class BoggleSolver {
     }
 
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
-    public Iterable<String> getAllValidWords(BoggleBoard board) {
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N ^ 2)
+     * @param board [description]
+     * @return value
+     */
+    public Iterable<String> getAllValidWords(final BoggleBoard board) {
         Set<String> validWords = new HashSet<String>();
 
         for (int i = 0; i < board.rows(); i++) {
@@ -30,9 +41,9 @@ public class BoggleSolver {
             return;
         }
 
+
         char letter = board.getLetter(row, col);
         String word = prefix;
-
         if (letter == 'Q') {
             word += "QU";
         } else {
