@@ -1,3 +1,4 @@
+import java.util.*;
 public class BoggleSolver {
 	// Initializes the data structure using the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
@@ -12,16 +13,17 @@ public class BoggleSolver {
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		Bag<String> valid = new Bag<String>();
+		Set<String> valid = new HashSet<String>();
+		boolean[][] marked;
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
-				boolean[][] marked = new boolean[board.rows()][board.cols()];
+				 marked = new boolean[board.rows()][board.cols()];
 				collect(board, i, j, marked, "", valid);
 			}
 		}
 		return valid;
 	}
-	private void collect(BoggleBoard board, int i, int j, boolean[][] marked, String start, Bag<String> valid) {
+	private void collect(BoggleBoard board, int i, int j, boolean[][] marked, String start, Set<String> valid) {
 		//if(i <= board.rows() && j <= board.cols()) {
 		if (marked[i][j]) {
 			return;
