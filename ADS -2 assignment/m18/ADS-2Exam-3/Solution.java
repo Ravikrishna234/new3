@@ -23,9 +23,10 @@ public class Solution {
 			T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
 			while (scan.hasNextLine()) {
 				String prefix = scan.nextLine();
-				for (String each : t9.getAllWords(prefix)) {
-					System.out.println(each);
-				}
+				t9.getAllWords(prefix);
+				// for (String each : t9.getAllWords(prefix)) {
+				// 	System.out.println(each);
+				// }
 			}
 			break;
 
@@ -120,18 +121,37 @@ public class Solution {
 
 class T9 {
 	private BinarySearchST<String, Integer> bst;
+	private String[] tokens;
+	TST<Integer> ts;
 	public T9(BinarySearchST<String, Integer> st) {
-		this.bst = st;
-		TST<Integer> ts = new TST<Integer>();
-		while(!bst.isEmpty()) {
-			//ts.put()
+		// this.bst = st;
+		// this.ts = new TST<Integer>();
+		// while(!bst.isEmpty()) {
+		// 	ts.put(bst.get());
+		// }
+		this.ts = new TST<Integer>();
+		tokens = toReadFile("/Files/t9.csv");
+		for(String s : tokens) {
+			if(ts.contains(s)) {
+			int value = ts.get(s);
+			ts.put(s, value + 1);
+		} else {
+			ts.put(s, 1);
+		}
 		}
 
+	}
+	public String[] toReadFile(String file) {
+		In in = new In(file);
+		return in.readAllStrings();
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
+		for(String s : ts.keysWithPrefix(prefix)) {
+			System.out.println(s);
+		}
 		return null;
 	}
 
