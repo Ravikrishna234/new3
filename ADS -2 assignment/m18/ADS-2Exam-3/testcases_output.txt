@@ -20,7 +20,7 @@ Your Output:
 149
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 wont
 working
@@ -62,13 +62,13 @@ working
 what
 whatever
 whats
+whatsup
 vegetables
 too
-toolets
-toopray
 took
 tookplace
 tool
+toolets
 tooo
 toopray
 toot
@@ -77,16 +77,18 @@ tootsie
 over
 overa
 overdid
+overdose
 overemphasiseor
 overheating
 overtime
 message
-messageits
 messaged
 messageit
+messageits
 messageno
 messagepandy
 messages
+messagesome
 going
 ----------------------------------------
 

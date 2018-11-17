@@ -131,12 +131,14 @@ class T9 {
 		// }
 		this.ts = new TST<Integer>();
 		tokens = toReadFile("/Files/t9.csv");
+
 		for(String s : tokens) {
-			if(ts.contains(s)) {
-			int value = ts.get(s);
-			ts.put(s, value + 1);
+			String s1 = s.toLowerCase();
+			if(ts.contains(s1)) {
+			int value = ts.get(s1);
+			ts.put(s1, value + 1);
 		} else {
-			ts.put(s, 1);
+			ts.put(s1, 1);
 		}
 		}
 
