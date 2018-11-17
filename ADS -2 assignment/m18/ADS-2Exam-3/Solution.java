@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**T9PREDICTIVETEXT.**/
-public class Solution {
+final class Solution {
     /**
      * @brief [brief description]
      * @details [long description]
@@ -146,8 +146,14 @@ class T9 {
     /**
     * variable.
     **/
-    TST<Integer> ts;
-    public T9(final BinarySearchST<String, Integer> st) {
+    private TST<Integer> ts;
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *
+     * @param st value
+     */
+    T9(final BinarySearchST<String, Integer> st) {
         // this.bst = st;
         // this.ts = new TST<Integer>();
         // while(!bst.isEmpty()) {
@@ -216,6 +222,7 @@ class T9 {
                 break;
             case 4: s3 = "ghi";
                 break;
+                default: break;
             }
         }
 
@@ -232,7 +239,9 @@ class T9 {
      *
      * @return value
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(
+        final Iterable<String> words,
+     final int k) {
         // your code goes here
         return null;
     }
