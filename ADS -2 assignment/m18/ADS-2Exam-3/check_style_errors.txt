@@ -345,10 +345,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m18\ADS-2Exam-3\Solution.java:221:18: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m18\ADS-2Exam-3\Solution.java:223:18: '4' is a magic number. [MagicNumber]
+[ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new3\ADS -2 assignment\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

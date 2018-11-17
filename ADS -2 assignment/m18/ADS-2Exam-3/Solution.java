@@ -218,9 +218,9 @@ class T9 {
             case 2: s1 = "abc";
 
                 break;
-            case 3: s2 = "def";
+            case 'a': s2 = "def";
                 break;
-            case 4: s3 = "ghi";
+            case 'b': s3 = "ghi";
                 break;
                 default: break;
             }
