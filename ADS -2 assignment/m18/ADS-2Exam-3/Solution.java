@@ -150,7 +150,7 @@ class T9 {
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		for(String s : ts.keysWithPrefix(prefix)) {
-			System.out.println(s);
+			System.out.println(s.toLowerCase());
 		}
 		return null;
 	}

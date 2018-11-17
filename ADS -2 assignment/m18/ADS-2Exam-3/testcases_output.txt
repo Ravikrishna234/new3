@@ -64,8 +64,8 @@ whatever
 whats
 vegetables
 too
-tooLets
-tooPray
+toolets
+toopray
 took
 tookplace
 tool
@@ -81,7 +81,7 @@ overemphasiseor
 overheating
 overtime
 message
-messageIts
+messageits
 messaged
 messageit
 messageno
