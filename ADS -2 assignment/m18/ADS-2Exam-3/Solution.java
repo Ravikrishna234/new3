@@ -11,7 +11,7 @@ final class Solution {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     *  Time complexity is O(N)
      * @param args value
      */
     public static void main(final String[] args) {
@@ -154,7 +154,7 @@ class T9 {
      *
      * @param st value
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    T9(final BinarySearchST<String, Integer> st) {
         // this.bst = st;
         // this.ts = new TST<Integer>();
         // while(!bst.isEmpty()) {
@@ -177,7 +177,7 @@ class T9 {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(N)
      * @param file value
      * @return value
      */
@@ -190,7 +190,7 @@ class T9 {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O(N)
      * @param prefix value
      * @return value
      */
@@ -204,7 +204,7 @@ class T9 {
     /**
      * @brief [brief description]
      * @details [long description]
-     *
+     * Time complexity is O()
      * @param t9Signature value
      * @return value
      */
@@ -283,4 +283,5 @@ class T9 {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
+
 
