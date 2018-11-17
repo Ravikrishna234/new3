@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.TreeSet;
 /**T9PREDICTIVETEXT.**/
 final class Solution {
     /**
@@ -153,7 +154,7 @@ class T9 {
      *
      * @param st value
      */
-    T9(final BinarySearchST<String, Integer> st) {
+    public T9(final BinarySearchST<String, Integer> st) {
         // this.bst = st;
         // this.ts = new TST<Integer>();
         // while(!bst.isEmpty()) {
@@ -209,25 +210,46 @@ class T9 {
      */
     public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
-        String s1 = "";
-        String s2 = "";
-        String s3 = "";
-        for (int i = 0; i < t9Signature.length(); i++) {
-            switch (t9Signature.charAt(i)) {
-            case 1:
-            case 2: s1 = "abc";
 
-                break;
-            case 'a': s2 = "def";
-                break;
-            case 'b': s3 = "ghi";
-                break;
-                default: break;
+        // your code goes here
+        TreeSet<String> set = new TreeSet<String>();
+        for (String word : ts.keys()) {
+            String[] tokens1 = word.split("");
+            String value = "";
+            for (String str : tokens1) {
+                if (str.equals("a")
+                    || str.equals("b") || str.equals("c")) {
+                    value += "2";
+                } else if (str.equals("d")
+                    || str.equals("e") || str.equals("f")) {
+                    value += "3";
+                } else if (str.equals("g")
+                    || str.equals("h") || str.equals("i")) {
+                    value += "4";
+                } else if (str.equals("j")
+                    || str.equals("k") || str.equals("l")) {
+                    value += "5";
+                } else if (str.equals("m")
+                    || str.equals("n") || str.equals("o")) {
+                    value += "6";
+                } else if (str.equals("p") || str.equals("q")
+                    || str.equals("r") || str.equals("s")) {
+                    value += "7";
+                } else if (str.equals("t")
+                    || str.equals("u") || str.equals("v")) {
+                    value += "8";
+                } else if (str.equals("w") || str.equals("x")
+                    || str.equals("y") || str.equals("z")) {
+                    value += "9";
+                }
+            }
+            if (value.equals(t9Signature)) {
+                set.add(word);
             }
         }
-
-        return null;
+        return set;
     }
+
 
     // return all possibilities(words), find top k with highest frequency.
     /**
