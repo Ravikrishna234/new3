@@ -18,7 +18,6 @@ final class CC {
     private int count;
     /**
      * @param graph value
-     * Time Complexity is E + 2V
      */
 
     CC(final Graphs graph) {
@@ -35,7 +34,7 @@ final class CC {
     /**
      * @param graph [description]
      * @param v [description]
-     * Time Complexity is O(N)
+     * Time Complexity is 2E + V
      */
     private void dfs(final Graphs graph, final int v) {
         marked[v] = true;

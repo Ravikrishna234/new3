@@ -112,10 +112,12 @@ final class Solution {
                 for (int i = 1; i < tokens.length; i++) {
                     g.addEdge(Integer.parseInt(tokens[0]),
                         Integer.parseInt(tokens[i]));
-                    g1.addEdge(Integer.parseInt(tokens[0]),
-                               Integer.parseInt(tokens[i]));
+                    //g1 = addgraph(tokens, g1, n);
+                     g1.addEdge(Integer.parseInt(tokens[0]),
+                                Integer.parseInt(tokens[i]));
                 }
-            }  else {
+            }
+                else {
                 for (int k = 0; k < n; k++) {
                     if (k != Integer.parseInt(tokens[0])) {
                         g1.addEdge(Integer.parseInt(tokens[0]), k);
@@ -141,6 +143,21 @@ final class Solution {
         // File path to the web content
         String file = "WebContent.txt";
 
+    }
+    public static Digraph addgraph(String[] tokens, Digraph g1, int n) {
+        if(tokens.length >= 2) {
+            for(int i = 0; i < tokens.length; i++) {
+                g1.addEdge(Integer.parseInt(tokens[0]),
+                    Integer.parseInt(tokens[i]));
+            }
+        } else {
+            for(int k = 0; k < n; k++) {
+                if(k != Integer.parseInt(tokens[0])) {
+                    g1.addEdge(Integer.parseInt(tokens[0]), k);
+                }
+            }
+        }
+        return g1;
     }
 }
 

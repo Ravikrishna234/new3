@@ -9,7 +9,7 @@ public class Solution {
 	/**
 	 * @brief [brief description]
 	 * @details [long description]
-	 * Time complexity is no of words
+	 * Time complexity is no of wordsT
 	 * @param args [description]
 	 */
 	public static void main(final String[] args) {

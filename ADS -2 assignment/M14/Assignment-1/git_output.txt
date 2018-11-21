@@ -1,0 +1,81 @@
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/Files/dictionary-algs4.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/In.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/README.md.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/Solution.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/testcases/output000.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/testcases/output001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/testcases/output002.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/testcases/output003.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/testcases/output004.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS -2 assignment/M14/Assignment-1/testcases/output005.txt.
+The file will have its original line endings in your working directory.
+[master 9107cda] "ads2_m14_a1_1: 6/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 56 files changed, 10198 insertions(+)
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Files/dictionary-algs4.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Files1/Queue$1.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Files1/Queue$ListIterator.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Files1/Queue$Node.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Files1/Queue.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Files1/Queue.java
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Files1/TSTS.java
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/In.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/In.java
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Queue$1.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Queue$ListIterator.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Queue$Node.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Queue.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/README.md
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Solution.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/Solution.java
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/SuffixArray$1.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/SuffixArray$Suffix.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/SuffixArray.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/SuffixArray.java
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/TST$1.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/TST$Node.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/TST.class
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/TST.jav
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/TST.java
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/check_style_errors.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/git_output.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/input000.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/input001.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/input002.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/input003.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/input004.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/input005.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/output000.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/output001.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/output002.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/output003.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/output004.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/output005.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/problem_id.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/md5/score.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/result/score.json
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/input000.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/input001.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/input002.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/input003.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/input004.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/input005.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/output000.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/output001.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/output002.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/output003.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/output004.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/output005.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases/problem_id.txt
+ create mode 100644 ADS -2 assignment/M14/Assignment-1/testcases_output.txt
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/Ravikrishna234/new3.git
+   1afce4a..9107cda  master -> master

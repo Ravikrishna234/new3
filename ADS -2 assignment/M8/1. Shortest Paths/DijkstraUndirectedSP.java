@@ -44,6 +44,7 @@ public class DijkstraUndirectedSP {
      *
      * @param      e     {Edge object}
      * @param      v     {Source vertex}
+     * Time complexity is O(1)
      */
     private void relax(final Edge e, final int v) {
         int w = e.other(v);
@@ -63,6 +64,7 @@ public class DijkstraUndirectedSP {
      * @param  v the destination vertex.
      * @return the length of a shortest path between the source vertex
      * and the vertex.
+     * Time complexity is O(1)
      *
      */
     public double distTo(final int v) {
@@ -75,6 +77,7 @@ public class DijkstraUndirectedSP {
      * @return {@code true} if there is a path between vertex
      * {@code s} to vertex {@code v};
      * {@code false} otherwise
+     * Time complexity is O(1).
      */
     public boolean hasPathTo(final int v) {
         return distTo[v] < Double.POSITIVE_INFINITY;

@@ -10,25 +10,25 @@ public class MSD {
     /**
      * variable.
      */
-    private static final int R             = 256;
+    private static final int R = 256;
     /**
      * variable.
      */
-    private static final int CUTOFF        =  15;
+    private static final int CUTOFF =  15;
 
     // do not instantiate
     public MSD() { }
 
-   /**
-     * Rearranges the array of extended ASCII strings in ascending order.
-     * Time complexity is O(wn)
-     * w is wordlength and n is no of strings
-     * @param a the array to be sorted
-     */
+    /**
+      * Rearranges the array of extended ASCII strings in ascending order.
+      * Time complexity is O(wn)
+      * w is wordlength and n is no of strings
+      * @param a the array to be sorted
+      */
     public static void sort(final String[] a) {
         int n = a.length;
         String[] aux = new String[n];
-        sort(a, 0, n-1, 0, aux);
+        sort(a, 0, n - 1, 0, aux);
     }
 
     // return dth character of s, -1 if d = length of string
@@ -60,7 +60,7 @@ public class MSD {
      * w is wordlength and n is no of strings
      */
     private static void sort(final String[] a, final int lo,
-        final int hi, final int d, final String[] aux) {
+                             final int hi, final int d, final String[] aux) {
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
@@ -69,20 +69,20 @@ public class MSD {
         }
 
         // compute frequency counts
-        int[] count = new int[R+2];
+        int[] count = new int[R + 2];
         for (int i = lo; i <= hi; i++) {
             int c = charAt(a[i], d);
-            count[c+2]++;
+            count[c + 2]++;
         }
 
         // transform counts to indicies
-        for (int r = 0; r < R+1; r++)
-            count[r+1] += count[r];
+        for (int r = 0; r < R + 1; r++)
+            count[r + 1] += count[r];
 
         // distribute
         for (int i = lo; i <= hi; i++) {
             int c = charAt(a[i], d);
-            aux[count[c+1]++] = a[i];
+            aux[count[c + 1]++] = a[i];
         }
 
         // copy back
@@ -92,7 +92,7 @@ public class MSD {
 
         // recursively sort for each character (excludes sentinel -1)
         for (int r = 0; r < R; r++)
-            sort(a, lo + count[r], lo + count[r+1] - 1, d+1, aux);
+            sort(a, lo + count[r], lo + count[r + 1] - 1, d + 1, aux);
     }
 
 
@@ -108,10 +108,10 @@ public class MSD {
      * Time complexity is O(N^2)
      */
     private static void insertion(final String[] a, final int lo,
-    final int hi, final int d) {
+                                  final int hi, final int d) {
         for (int i = lo; i <= hi; i++)
-            for (int j = i; j > lo && less(a[j], a[j-1], d); j--)
-                exch(a, j, j-1);
+            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--)
+                exch(a, j, j - 1);
     }
 
     // exchange a[i] and a[j]
@@ -125,7 +125,7 @@ public class MSD {
      * Time complexity is O(1)
      */
     private static void exch(final String[] a,
-        final int i, final int j) {
+                             final int i, final int j) {
         String temp = a[i];
         a[i] = a[j];
         a[j] = temp;
@@ -142,15 +142,15 @@ public class MSD {
      * @return value
      */
     private static boolean less(final String v,
-        final String w, final int d) {
+                                final String w, final int d) {
         // assert v.substring(0, d).equals(w.substring(0, d));
         for (int i = d; i < Math.min(v.length(), w.length()); i++) {
             if (v.charAt(i) < w.charAt(i)) {
-             return true;
-         }
+                return true;
+            }
             if (v.charAt(i) > w.charAt(i)) {
-             return false;
-         }
+                return false;
+            }
         }
         return v.length() < w.length();
     }
@@ -163,7 +163,7 @@ public class MSD {
      */
     public String toString(String[] a) {
         String str = "[";
-        for(int i = 0; i < a.length - 1; i++) {
+        for (int i = 0; i < a.length - 1; i++) {
             str += a[i] + ", ";
         }
         str += a[a.length - 1] + "]";

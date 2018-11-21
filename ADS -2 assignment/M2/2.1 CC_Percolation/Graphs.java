@@ -65,6 +65,7 @@ public class Graphs implements Graph {
     /**
      * @param v value
      * @return value
+     *  Time Complexity is 1
      */
     public Iterable<Integer> adj(final int v) {
         //validateVertex(v);
