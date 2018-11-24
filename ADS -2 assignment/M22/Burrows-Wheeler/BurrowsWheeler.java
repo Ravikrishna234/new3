@@ -7,7 +7,11 @@ import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
 import edu.princeton.cs.algs4.Queue;
 public class BurrowsWheeler {
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N)
+     */
     public static void transform() {
         String s = BinaryStdIn.readString();
         CircularSuffixArray csa = new CircularSuffixArray(s);
@@ -21,7 +25,11 @@ public class BurrowsWheeler {
         }
         BinaryStdOut.close();
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is length of the string
+     */
    public static void inverseTransform() {
         int first = BinaryStdIn.readInt();
         String s = BinaryStdIn.readString();

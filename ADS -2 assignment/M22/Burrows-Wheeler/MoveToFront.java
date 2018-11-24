@@ -6,7 +6,11 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 
 
 public class MoveToFront {
-
+/**
+ * @brief [brief description]
+ * @details [long description]
+ * Time complexity is O(N)
+ */
     public static void encode() {
         ArrayList<Character> list = new ArrayList<Character>();
         for (int i = 0; i < 256; i++) {
@@ -27,7 +31,11 @@ public class MoveToFront {
 
 
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time Complexity is O(N)
+     */
     public static void decode() {
         ArrayList<Character> list = new ArrayList<Character>();
         for (int i = 0; i < 256; i++) {

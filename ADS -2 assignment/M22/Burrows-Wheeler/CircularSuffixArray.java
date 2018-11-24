@@ -59,14 +59,22 @@ public class CircularSuffixArray {
             // this.text = text;
             this.index = index;
         }
+        /**
+        * Time complexity is O(1)
+        **/
         private int length() {
             return text.length();
         }
+         /**
+        * Time complexity is O(1)
+        **/
         private char charAt(int i) {
             i = (index + i) % length();
             return text.charAt(i);
         }
-
+         /**
+        * Time complexity is O(minimum length of string)
+        **/
         public int compareTo(Suffix that) {
             if (this == that) return 0;  // optimization
             int n = Math.min(this.length(), that.length());
@@ -76,7 +84,9 @@ public class CircularSuffixArray {
             }
             return this.length() - that.length();
         }
-
+         /**
+        * Time complexity is O(N)
+        **/
         public String toString() {
             return text.substring(index) + text.substring(0, index);
         }
@@ -111,13 +121,17 @@ public class CircularSuffixArray {
      * @return the length of the longest common prefix of the <em>i</em>th
      * smallest suffix and the <em>i</em>-1st smallest suffix.
      * @throws java.lang.IllegalArgumentException unless {@code 1 <= i < n}
-     */
+        * Time complexity is O(1)
+        **/
     private int lcp(int i) {
         if (i < 1 || i >= suffixes.length) throw new IllegalArgumentException();
         return lcpSuffix(suffixes[i], suffixes[i - 1]);
     }
 
-    // longest common prefix of s and t
+
+     /**
+        * Time complexity is O(minimum length of string)
+        **/
     private static int lcpSuffix(Suffix s, Suffix t) {
         int n = Math.min(s.length(), t.length());
         for (int i = 0; i < n; i++) {
@@ -131,7 +145,9 @@ public class CircularSuffixArray {
      * @param i the index
      * @return the <em>i</em> smallest suffix as a string
      * @throws java.lang.IllegalArgumentException unless {@code 0 <= i < n}
-     */
+    **
+        * Time complexity is O(1)
+        **/
     private String select(int i) {
         if (i < 0 || i >= suffixes.length) throw new IllegalArgumentException();
         return suffixes[i].toString();
@@ -143,7 +159,10 @@ public class CircularSuffixArray {
      * between 0 and <em>n</em>-1.
      * @param query the query string
      * @return the number of suffixes strictly less than {@code query}
-     */
+      **
+        * Time complexity is O(log(N))
+        **/
+
     private int rank(String query) {
         int lo = 0, hi = suffixes.length - 1;
         while (lo <= hi) {
@@ -156,7 +175,9 @@ public class CircularSuffixArray {
         return lo;
     }
 
-    // compare query string to suffix
+     /**
+        * Time complexity is O(minimum length of string)
+        **/
     private static int compare(String query, Suffix suffix) {
         int n = Math.min(query.length(), suffix.length());
         for (int i = 0; i < n; i++) {
