@@ -2,9 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Arrays;
 
-/**
- * Created by Rene Argento on 16/04/17.
- */
+
 public class Exercise31_DistinctValues {
 
     // Parameters example: 500000 1000000 10

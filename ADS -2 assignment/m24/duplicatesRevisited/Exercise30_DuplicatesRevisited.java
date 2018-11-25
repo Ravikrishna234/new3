@@ -1,9 +1,6 @@
 
 import java.util.concurrent.ThreadLocalRandom;
 
-/**
- * Created by Rene Argento on 19/08/17.
- */
 public class Exercise30_DuplicatesRevisited  {
 
     private class DistinctCounter {
